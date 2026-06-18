@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vwebit - Professional SEO &amp; Web Development</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+        
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Subtle fade-in animation */
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "secondary-container": "#dae2fd",
+                        "surface-dim": "#d8dadc",
+                        "on-secondary-container": "#5c647a",
+                        "on-primary-fixed": "#00174b",
+                        "surface": "#f7f9fb",
+                        "on-tertiary-container": "#e9f0ff",
+                        "inverse-surface": "#2d3133",
+                        "on-primary-container": "#eeefff",
+                        "on-tertiary-fixed": "#0d1c2e",
+                        "surface-variant": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f2f4f6",
+                        "primary": "#004ac6",
+                        "inverse-primary": "#b4c5ff",
+                        "secondary": "#565e74",
+                        "surface-tint": "#0053db",
+                        "secondary-fixed": "#dae2fd",
+                        "tertiary-fixed": "#d5e3fc",
+                        "tertiary": "#48566a",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#606e83",
+                        "background": "#f7f9fb",
+                        "on-surface-variant": "#434655",
+                        "error": "#ba1a1a",
+                        "primary-container": "#2563eb",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-surface": "#191c1e",
+                        "on-background": "#191c1e",
+                        "on-tertiary-fixed-variant": "#3a485b",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary-fixed": "#131b2e",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "tertiary-fixed-dim": "#b9c7df",
+                        "outline-variant": "#c3c6d7",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f7f9fb",
+                        "surface-container-high": "#e6e8ea",
+                        "on-error": "#ffffff",
+                        "outline": "#737686",
+                        "surface-container": "#eceef0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "48px",
+                        "lg": "2.5rem",
+                        "base": "4px",
+                        "xl": "4rem",
+                        "gutter": "24px",
+                        "xs": "0.5rem",
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "md": "1.5rem",
+                        "sm": "1rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-md": ["Geist"],
+                        "headline-xl-mobile": ["Geist"],
+                        "headline-xl": ["Geist"],
+                        "label-sm": ["Geist"],
+                        "label-md": ["Geist"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar (Mobile Adapted) -->
+<header class="bg-surface docked full-width top-0 border-b border-outline-variant flat no shadows sticky z-50 transition-colors">
+<div class="flex justify-between items-center w-full px-margin-mobile mx-auto h-20">
+<!-- Brand -->
+<a class="text-headline-md font-headline-md font-bold text-primary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dataset</span>
+                Vwebit
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded p-1" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+<!-- Desktop Nav (Hidden on Mobile) -->
+<nav class="hidden md:flex items-center gap-gutter font-body-md text-body-md font-label-md text-label-md">
+<a class="text-secondary hover:text-primary transition-colors hover:opacity-90 transition-opacity py-2" href="#">Services</a>
+<a class="text-secondary hover:text-primary transition-colors hover:opacity-90 transition-opacity py-2" href="#">Industries</a>
+<a class="text-secondary hover:text-primary transition-colors hover:opacity-90 transition-opacity py-2" href="#">Portfolio</a>
+<a class="text-secondary hover:text-primary transition-colors hover:opacity-90 transition-opacity py-2" href="#">About</a>
+<a class="text-secondary hover:text-primary transition-colors hover:opacity-90 transition-opacity py-2" href="#">Blog</a>
+<a class="text-secondary hover:text-primary transition-colors hover:opacity-90 transition-opacity py-2" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded font-label-md hover:bg-primary-container transition-colors ml-4 shadow-sm hover:opacity-90 transition-opacity">Get Free Consultation</button>
+</nav>
+</div>
+<!-- Mobile Collapsible Menu -->
+<div class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant absolute w-full left-0 shadow-lg px-margin-mobile py-4 flex-col gap-4" id="mobile-menu">
+<a class="block text-secondary hover:text-primary font-label-md py-2 border-b border-outline-variant/50" href="#">Services</a>
+<a class="block text-secondary hover:text-primary font-label-md py-2 border-b border-outline-variant/50" href="#">Industries</a>
+<a class="block text-secondary hover:text-primary font-label-md py-2 border-b border-outline-variant/50" href="#">Portfolio</a>
+<a class="block text-secondary hover:text-primary font-label-md py-2 border-b border-outline-variant/50" href="#">About</a>
+<a class="block text-secondary hover:text-primary font-label-md py-2 border-b border-outline-variant/50" href="#">Blog</a>
+<a class="block text-secondary hover:text-primary font-label-md py-2" href="#">Contact</a>
+<button class="w-full bg-primary text-on-primary py-3 rounded font-label-md mt-2 text-center active:scale-95 duration-150">Get Free Consultation</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="px-margin-mobile py-lg md:py-xl flex flex-col gap-lg bg-surface-container-lowest border-b border-outline-variant fade-in">
+<div class="flex flex-col gap-4 text-center md:text-left pt-4">
+<span class="inline-block bg-primary-fixed text-on-primary-fixed-variant font-label-sm px-3 py-1 rounded-full w-fit mx-auto md:mx-0 uppercase tracking-wider">Clean Business Website</span>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface">TRUSTWORTHY PARTNER</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto md:mx-0">
+                    Professional SEO and Web Development solutions tailored for Indian SMEs. We build fast, secure, and conversion-optimized digital experiences.
+                </p>
+<div class="flex flex-col gap-3 mt-4 w-full md:w-auto md:flex-row">
+<button class="bg-primary text-on-primary font-label-md py-4 px-8 rounded-DEFAULT w-full md:w-auto hover:bg-[#003ea8] transition-colors active:scale-95 shadow-sm text-center">Get Free Consultation</button>
+<button class="border border-on-secondary-fixed-variant text-on-secondary-fixed-variant bg-transparent font-label-md py-4 px-8 rounded-DEFAULT w-full md:w-auto hover:bg-surface-container transition-colors active:scale-95 text-center flex items-center justify-center gap-2">
+                        View Portfolio <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="w-full rounded-xl overflow-hidden shadow-sm border border-outline-variant mt-4">
+<img alt="A high-quality hero image showing a modern laptop on a wooden desk in a bright, professional office environment, displaying a clean business website interface. The aesthetic is clean, well-lit, and corporate." class="w-full h-auto object-cover max-h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1p0vKVymNH1v1FhdDtVlUHbMDEbndGiEB0yyTeCnMZg7j_W_K5SLurN5gWT02DJtWzXBsqDCvhQX6T_gR5PhEDXpmioAx9KgcasSdaGLUwH9emOzd_9mfBxbhURV4yUcxerkNQ_TUTRD1RGlFVGT-5ysXB8wSKEvew1AQ9q4Lk2w0jixX082K0jMVgnFDUURCvUTXib2__EtBwd3NU5QTQbZ6cIqWAzq8GSYh1XW2-zTWhLcQ4XVDknyw-ycECGr8frTpjtyWagN9"/>
+</div>
+</section>
+<!-- Services Section (Bento/Stacked) -->
+<section class="px-margin-mobile py-xl bg-surface fade-in delay-100">
+<div class="text-center mb-8">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Our Services</h2>
+<p class="font-body-md text-body-md text-secondary">Comprehensive digital solutions to scale your business.</p>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-[0px_4px_20px_rgba(15,23,42,0.02)] hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow group flex flex-col gap-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">language</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">Web Development</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Custom, responsive websites built for speed and performance. We ensure your online presence reflects your brand's quality.</p>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-[0px_4px_20px_rgba(15,23,42,0.02)] hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow group flex flex-col gap-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">SEO Optimization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Data-driven strategies to improve your search rankings and drive organic, high-intent traffic to your business.</p>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-[0px_4px_20px_rgba(15,23,42,0.02)] hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow group flex flex-col gap-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">E-Commerce Solutions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Robust online stores designed for conversion, featuring seamless payment integrations and inventory management.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Industries Section -->
+<section class="px-margin-mobile py-xl bg-surface-container-low border-y border-outline-variant fade-in delay-200">
+<div class="flex flex-col gap-6">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Industries We Serve</h2>
+<p class="font-body-md text-body-md text-secondary">Specialized expertise across various SME sectors.</p>
+</div>
+<div class="w-full rounded-xl overflow-hidden shadow-sm border border-outline-variant mb-4">
+<img alt="A collage of professional photographs representing different industries: a modern clinic interior, a local storefront, a construction site, and a logistics office. The style is bright, clean, and representative of modern Indian SMEs." class="w-full h-auto object-cover max-h-[300px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDznkMEusjPgZCmXu7eH9OMo9wQv9sUwqWQXaEOBOFCugQnTwkDEKka0Iaewv7Oa4dhp_MqbrjE0piX7kcUmiEu_N60euguTTSHhFZbT_mQ5AidW6HcaJdNDshQ0xPkCXQqZMot1y9ErbRkj8q4nrC6SZcMCaWPhpaYBeVFK6HN6dPdwqTNE7CpCNhKevMbIyctp2OhcvnrhVTWMNYHyIhWVGgkhuH5BRRhJ9rgiYNJVWMw0O5r3y3KTpzn7JkGGOfBm5IDqoOuDyb9"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded-lg flex flex-col items-center justify-center gap-2 text-center shadow-[0px_2px_10px_rgba(15,23,42,0.02)]">
+<span class="material-symbols-outlined text-primary text-[28px]">local_shipping</span>
+<span class="font-label-sm text-label-sm text-on-surface">Packers &amp; Movers</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded-lg flex flex-col items-center justify-center gap-2 text-center shadow-[0px_2px_10px_rgba(15,23,42,0.02)]">
+<span class="material-symbols-outlined text-primary text-[28px]">construction</span>
+<span class="font-label-sm text-label-sm text-on-surface">Contractors</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded-lg flex flex-col items-center justify-center gap-2 text-center shadow-[0px_2px_10px_rgba(15,23,42,0.02)]">
+<span class="material-symbols-outlined text-primary text-[28px]">local_hospital</span>
+<span class="font-label-sm text-label-sm text-on-surface">Clinics</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant p-4 rounded-lg flex flex-col items-center justify-center gap-2 text-center shadow-[0px_2px_10px_rgba(15,23,42,0.02)]">
+<span class="material-symbols-outlined text-primary text-[28px]">store</span>
+<span class="font-label-sm text-label-sm text-on-surface">Local Business</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant full-width flat no shadows">
+<div class="grid grid-cols-1 gap-lg px-margin-mobile py-xl max-w-max-width mx-auto">
+<div class="flex flex-col gap-4">
+<a class="text-headline-sm font-headline-sm font-bold text-primary dark:text-inverse-primary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dataset</span>
+                    Vwebit
+                </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant max-w-xs">
+                    © 2024 Vwebit. All rights reserved. Professional SEO &amp; Web Development for Indian SMEs.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-x-4 gap-y-4">
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit" href="#">Services</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit" href="#">Blog</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit" href="#">Industries</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit" href="#">Contact</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit" href="#">Portfolio</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit" href="#">About</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple mobile menu toggle logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = menuBtn.querySelector('.material-symbols-outlined');
+
+            menuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add('flex');
+                    menuIcon.textContent = 'close';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    menuIcon.textContent = 'menu';
+                }
+            });
+        });
+    </script>
+</body></html>

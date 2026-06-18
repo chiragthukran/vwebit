@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vwebit - Industries (Mobile)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#191c1e",
+                      "on-surface": "#191c1e",
+                      "surface-container-high": "#e6e8ea",
+                      "secondary-fixed": "#dae2fd",
+                      "surface-container": "#eceef0",
+                      "primary-container": "#2563eb",
+                      "tertiary": "#48566a",
+                      "on-secondary-fixed": "#131b2e",
+                      "surface-bright": "#f7f9fb",
+                      "on-secondary-container": "#5c647a",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#dbe1ff",
+                      "background": "#f7f9fb",
+                      "surface": "#f7f9fb",
+                      "on-tertiary-container": "#e9f0ff",
+                      "tertiary-fixed": "#d5e3fc",
+                      "secondary-container": "#dae2fd",
+                      "tertiary-container": "#606e83",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "outline": "#737686",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "inverse-on-surface": "#eff1f3",
+                      "secondary": "#565e74",
+                      "inverse-surface": "#2d3133",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#434655",
+                      "surface-tint": "#0053db",
+                      "tertiary-fixed-dim": "#b9c7df",
+                      "outline-variant": "#c3c6d7",
+                      "inverse-primary": "#b4c5ff",
+                      "on-primary-container": "#eeefff",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#d8dadc",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#3a485b",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-primary-fixed": "#00174b",
+                      "surface-variant": "#e0e3e5",
+                      "on-tertiary-fixed": "#0d1c2e",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "error": "#ba1a1a",
+                      "surface-container-low": "#f2f4f6",
+                      "primary": "#004ac6",
+                      "on-secondary-fixed-variant": "#3f465c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "max-width": "1280px",
+                      "margin-mobile": "16px",
+                      "xs": "0.5rem",
+                      "md": "1.5rem",
+                      "sm": "1rem",
+                      "base": "4px",
+                      "gutter": "24px",
+                      "xl": "4rem",
+                      "lg": "2.5rem",
+                      "margin-desktop": "48px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Geist"],
+                      "headline-xl": ["Geist"],
+                      "headline-xl-mobile": ["Geist"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Geist"],
+                      "label-md": ["Geist"],
+                      "body-sm": ["Inter"],
+                      "label-sm": ["Geist"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Mobile Nav Header (Simplified for Mobile view) -->
+<header class="bg-surface border-b border-outline-variant sticky top-0 z-50 flex justify-between items-center h-16 px-margin-mobile w-full">
+<div class="font-headline-md text-headline-md font-bold text-primary">Vwebit</div>
+<button class="text-on-surface hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="w-full max-w-[100vw] overflow-x-hidden">
+<!-- Hero Section -->
+<section class="px-margin-mobile py-lg text-center">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface mb-sm">Industries We Empower</h1>
+<p class="font-body-md text-body-md text-secondary">Tailored digital solutions for growing Indian SMEs across key sectors.</p>
+</section>
+<!-- Industries Grid (Vertical List for Mobile) -->
+<section class="px-margin-mobile pb-xl flex flex-col gap-md">
+<!-- Industry Card 1: Retail & E-commerce -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img alt="Retail Store Front" class="w-full h-full object-cover" data-alt="A modern retail storefront interior viewed from an angle. Soft natural light illuminates sleek display shelves holding premium products. The aesthetic is clean, minimal, and professional, aligning with a light-mode B2B design system. High-quality corporate photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHs2jrJkcPCi3p_Z2nLJ0QqugItZcCLcqUK-Qa4Tpcxiif6pZH1s0QOyWYyPcFQXAkm3tewreG_UCMMbD1RGi2hiDHu_87zPz3grNQQlFBXlaAuRBCYkEbzjKryTXOLlyrUxKl_qvWS5umfU8pbF45EL-w2JtSvFzWRnbPtsShm4P9ZSiORYIbLoHW41Jvo6VI_Gn6nN9gtJCG0GaaKaTo_gXxxti4VO0tMfETq4mJw-O40DSjWmPFWO4N9wc-GXrPq40HXkXRJutD"/>
+</div>
+<div class="p-md">
+<div class="flex items-center gap-xs mb-xs">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Retail &amp; E-commerce</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-sm">Omnichannel strategies and seamless digital storefronts that drive conversions and build customer loyalty.</p>
+<a class="inline-flex items-center font-label-md text-label-md text-primary hover:text-primary-fixed-dim transition-colors group" href="#">
+                        Explore Retail Solutions <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Industry Card 2: Manufacturing -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img alt="Modern Manufacturing" class="w-full h-full object-cover" data-alt="A clean, highly organized modern manufacturing facility. Automated machinery and sleek robotic arms working on an assembly line. The lighting is bright and even, highlighting the precision and technology in the space. Professional, industrial aesthetic suitable for a high-end B2B context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJY4IbehVGNYJi3kJzZTjsCUY5r5UXlXYfSWWyhc6NH-AfMcA-F2M_ex7hoZCdWXNkLz9AaQfA2B4wnzLdTkU48V4fUrme8qA7yVcljveSVYxCXRDX2MANQ5Apt8t96i-azOTzLb6fdlrTqQePm-jy0DCIgD6VRtz1Z-pbvj2GRu_YQoMJLb8PmP_a1uNEtwJhH92SNSqI5C9NpCw6dEGli-6TIdhJjFawvTQhRr5cF4Z2tUTre-92nmdScAG_EpzfX8ExyfCeRxF7"/>
+</div>
+<div class="p-md">
+<div class="flex items-center gap-xs mb-xs">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Manufacturing</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-sm">Digital transformation for legacy processes, improving supply chain visibility and operational efficiency.</p>
+<a class="inline-flex items-center font-label-md text-label-md text-primary hover:text-primary-fixed-dim transition-colors group" href="#">
+                        Explore Manufacturing <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Industry Card 3: Healthcare -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img alt="Healthcare Technology" class="w-full h-full object-cover" data-alt="A pristine, modern medical clinic or laboratory setting. A digital tablet showing data analytics sits next to clean, high-tech medical equipment. The environment is sterile but welcoming, characterized by soft white lighting and a palette of crisp whites and subtle blues. Premium B2B healthcare imagery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiwgyYt03NvK3G5IU8NHDhQcfD597EKKB3ETP7tm9HYYSTSFQ3OKp9-7bRB-HTAlXYusUDg_N5czGm3sG5uXHCezx2mOo3e2MvWQVA__KvpTEorJOV-j9FhGXQm2vvqICUIuiJJc5yC5jV_embXpX31Icj6ESYAToVcsELxLkyz0bcPuQZQ9irOodCyS5O1FtDePXKYTyeDn0u4UUaIb79s5Vn_frHgy9FFXSm0deQf1vmhxygdVd1KapDnjlY95NsaSF4JLaG7bJD"/>
+</div>
+<div class="p-md">
+<div class="flex items-center gap-xs mb-xs">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Healthcare</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-sm">Secure patient portals, telemedicine integrations, and HIPAA-compliant data management solutions.</p>
+<a class="inline-flex items-center font-label-md text-label-md text-primary hover:text-primary-fixed-dim transition-colors group" href="#">
+                        Explore Healthcare <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Industry Card 4: Professional Services -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-48 w-full bg-surface-container relative">
+<img alt="Professional Office" class="w-full h-full object-cover" data-alt="A bright, minimalist corporate boardroom or executive office. Sleek glass partitions, a polished wooden table, and comfortable modern chairs. The scene conveys trust, authority, and professional rigor, bathed in natural light from large windows. High-end consulting aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYUW-xqhhna9Bt5w0VCroTTfJkjuJZWTQD-0EekMvZy3mKldIZNnQ-tdRzw5XmPF3-sKFKBTWrK12OfTL3ywBCZVeR6zziwwLjpQADBIkKcjGtOHuBs0PL2QfgDJYTG5sjWgDzOVvu5MMkpFcbhmW7RIWYddOtHFH01ThJ6_fmNeAU7I2WdI3JCsmuM5jAf_F2Qw0VQSiCV2qWdxkdfCvH6fXOTt7lENeLEu6AtsqX3mGcJ-YkT3GrYIwL-ENZA-hOehMGUet1k7eW"/>
+</div>
+<div class="p-md">
+<div class="flex items-center gap-xs mb-xs">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">domain</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Professional Services</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-sm">Client management systems, automated workflows, and authoritative digital presences for B2B firms.</p>
+<a class="inline-flex items-center font-label-md text-label-md text-primary hover:text-primary-fixed-dim transition-colors group" href="#">
+                        Explore Services <span class="material-symbols-outlined ml-1 group-hover:translate-x-1 transition-transform text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container-low px-margin-mobile py-lg border-t border-outline-variant text-center">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-xs">Not sure where you fit?</h2>
+<p class="font-body-sm text-body-sm text-secondary mb-md">We build custom solutions for unique challenges across all sectors.</p>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-md py-xs rounded-full hover:bg-on-primary-fixed-variant transition-colors w-full sm:w-auto">
+                Get Consultation
+            </button>
+</section>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-surface-container-low border-t border-outline-variant w-full grid grid-cols-1 md:grid-cols-4 gap-gutter py-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="flex flex-col gap-sm md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-primary">Vwebit</div>
+<p class="font-body-sm text-body-sm text-on-surface">© 2024 Vwebit Digital Solutions. All rights reserved. Serving Indian SMEs with pride.</p>
+</div>
+<div class="flex flex-col gap-xs md:col-span-3">
+<nav class="flex flex-col gap-xs">
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline opacity-90 hover:opacity-100 transition-opacity w-fit" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline opacity-90 hover:opacity-100 transition-opacity w-fit" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline opacity-90 hover:opacity-100 transition-opacity w-fit" href="#">Sitemap</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline opacity-90 hover:opacity-100 transition-opacity w-fit" href="#">Careers</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline opacity-90 hover:opacity-100 transition-opacity w-fit" href="#">Partner Program</a>
+</nav>
+</div>
+</footer>
+</body></html>

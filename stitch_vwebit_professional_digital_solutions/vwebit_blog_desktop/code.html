@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vwebit Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1e",
+                        "on-surface": "#191c1e",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed": "#dae2fd",
+                        "surface-container": "#eceef0",
+                        "primary-container": "#2563eb",
+                        "tertiary": "#48566a",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-bright": "#f7f9fb",
+                        "on-secondary-container": "#5c647a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "background": "#f7f9fb",
+                        "surface": "#f7f9fb",
+                        "on-tertiary-container": "#e9f0ff",
+                        "tertiary-fixed": "#d5e3fc",
+                        "secondary-container": "#dae2fd",
+                        "tertiary-container": "#606e83",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "outline": "#737686",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary": "#565e74",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#434655",
+                        "surface-tint": "#0053db",
+                        "tertiary-fixed-dim": "#b9c7df",
+                        "outline-variant": "#c3c6d7",
+                        "inverse-primary": "#b4c5ff",
+                        "on-primary-container": "#eeefff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#3a485b",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed": "#00174b",
+                        "surface-variant": "#e0e3e5",
+                        "on-tertiary-fixed": "#0d1c2e",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f2f4f6",
+                        "primary": "#004ac6",
+                        "on-secondary-fixed-variant": "#3f465c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "xs": "0.5rem",
+                        "md": "1.5rem",
+                        "sm": "1rem",
+                        "base": "4px",
+                        "gutter": "24px",
+                        "xl": "4rem",
+                        "lg": "2.5rem",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "headline-xl": ["Geist"],
+                        "headline-xl-mobile": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Geist"],
+                        "label-md": ["Geist"],
+                        "body-sm": ["Inter"],
+                        "label-sm": ["Geist"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-on-background border-b border-outline-variant dark:border-outline full-width top-0 sticky z-50">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-max-width mx-auto">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed" href="#">
+                Vwebit
+            </a>
+<div class="hidden md:flex space-x-gutter">
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Services</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Industries</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Portfolio</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">About</a>
+<a aria-current="page" class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Blog</a>
+</div>
+<div class="hidden md:flex space-x-sm">
+<button class="font-label-md text-label-md text-primary dark:text-primary-fixed border border-primary dark:border-primary-fixed px-4 py-2 rounded-DEFAULT hover:bg-surface-container-high transition-colors scale-95 active:opacity-80 transition-transform">Contact</button>
+<button class="font-label-md text-label-md bg-primary text-on-primary px-4 py-2 rounded-DEFAULT hover:opacity-90 transition-opacity scale-95 active:opacity-80 transition-transform">Get Consultation</button>
+</div>
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow max-w-max-width mx-auto px-margin-desktop py-xl w-full">
+<!-- Header Section -->
+<header class="mb-xl text-center max-w-3xl mx-auto">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-sm">Insights &amp; Strategies</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Expert advice on digital marketing, local SEO, and business growth strategies tailored for modern SMEs.</p>
+</header>
+<!-- Blog Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Article 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow duration-300">
+<div class="aspect-video w-full bg-surface-container relative">
+<img alt="Local Business Owner" class="object-cover w-full h-full" data-alt="A professional business owner standing confidently in front of a modern local storefront. Bright daylight illumination highlights the welcoming atmosphere of the brick-and-mortar shop. The aesthetic is clean and contemporary, reflecting a successful small business growth narrative with subtle high-contrast accents in a light-mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1nezf6RqjuVRHsrCmBYBpWh8YlCN_pE42CPGzUFE7RIVtX5bElib-0YAMy2usqSTSXNc-ErmgNmWRF48CMYaT4fQOm3bIASpmOsMlMfqVGuzY0xj7yqokkotQTB3sZpitK8-nkqhg_3kd36dft2hGs0dH2IPC_OFvx6r9rCHvVPHqKOEdeksAoXk297xjeqpehjeRK-HU9cTwWctUQGt-pkOj3v5rHtO_jOnQdQoBoVKySNMN-wRn086AxW-YfaVDLPEzdC_Il0C5"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="mb-sm">
+<span class="bg-surface-container px-2 py-1 rounded-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Business Strategy</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm line-clamp-2 hover:text-primary cursor-pointer transition-colors">How to Grow Your Local Business in 2024</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg line-clamp-3 flex-grow">
+                        Discover actionable strategies to expand your local footprint. From community engagement to targeted digital advertising, learn how to attract and retain loyal customers in your immediate area.
+                    </p>
+<div class="flex items-center justify-between mt-auto pt-sm border-t border-outline-variant">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 12, 2024</span>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center" href="#">
+                            Read More <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow duration-300">
+<div class="aspect-video w-full bg-surface-container relative">
+<img alt="SEO for Contractors" class="object-cover w-full h-full" data-alt="A construction contractor's desk featuring architectural blueprints, a modern laptop displaying search engine analytics, and a yellow hard hat. The scene is brightly lit with natural window light, creating a crisp, professional environment. The composition conveys strategic planning and digital transformation in the trades industry within a refined, minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCds7e028abTFUnil8xF-jZZNAt_CmX6id5ptxILcvGaNM2vcV5z6B9v5yy63qo9a28wiVBVyzpqRptVUuX91RZIRwKCQAd5yT4CG_Z9NhuGiZHWyDqY463vfbyVKeJlk5HY0VlhthHek8ru7bGHKmJIEYOMJWhH2_9iii9PMDHjpMTgXqASHIZgGXqxKObNmfTiLcnaAr56JyP0Fo-0LOS7OIYGKnA3RuEs4nW7RdWckh9wR5n83_NrsPFGx16R4S3vj3d3ld8A34I"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="mb-sm">
+<span class="bg-surface-container px-2 py-1 rounded-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Local SEO</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm line-clamp-2 hover:text-primary cursor-pointer transition-colors">SEO Tips for Contractors: Getting Found Online</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg line-clamp-3 flex-grow">
+                        Contracting is a highly competitive local market. Learn the specific search engine optimization techniques that will push your services to the top of Google results when homeowners search for help.
+                    </p>
+<div class="flex items-center justify-between mt-auto pt-sm border-t border-outline-variant">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 05, 2024</span>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center" href="#">
+                            Read More <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow duration-300">
+<div class="aspect-video w-full bg-surface-container relative">
+<img alt="Google Business Profile" class="object-cover w-full h-full" data-alt="A close-up shot of a smartphone screen displaying a Google Business Profile listing with 5-star reviews. The phone is held by a professional in a bright, modern office setting with a blurred background. The lighting is soft and diffused, emphasizing the importance of digital reputation management in a clean, institutional modern style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-5yYNpMz2vISgtQayAjvgVPB4scT4xqoKFtXkwykuJt801HjDrTb-_eXwxgc6iGCJ1DJKau5tXjxkkBBRGAbOHatHTbqFeDl6vw68P13KILGNrCgmlbYN_58kvDLgDVrPKjAJdFZMOq15R8yB23DM4wkUCKtaQVA_7vdTbolOvUeOHY5ZYCKUFA-MILtDvzx0Eb8DDfd-MG_x2sFNNvZ0ut4k2twWbcioijvFxjs6UpNyEOh4Xr5Na2zUPZcplA48gXEoYyk1Yj4S"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<div class="mb-sm">
+<span class="bg-surface-container px-2 py-1 rounded-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Digital Marketing</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm line-clamp-2 hover:text-primary cursor-pointer transition-colors">The Critical Importance of Your Google Business Profile</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg line-clamp-3 flex-grow">
+                        Your GBP is often the first interaction a potential client has with your brand. We break down exactly how to optimize your profile to maximize visibility, trust, and ultimately, foot traffic and calls.
+                    </p>
+<div class="flex items-center justify-between mt-auto pt-sm border-t border-outline-variant">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sep 28, 2024</span>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center" href="#">
+                            Read More <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination (Simple Placeholder) -->
+<div class="mt-xl flex justify-center items-center space-x-2">
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-DEFAULT text-on-surface-variant hover:bg-surface-container transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center border border-primary bg-primary text-on-primary rounded-DEFAULT font-label-md text-label-md">1</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-DEFAULT text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md">2</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-DEFAULT text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md">3</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-DEFAULT text-on-surface-variant hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-dim border-t border-outline-variant dark:border-outline full-width mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-xl px-margin-desktop max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed mb-sm">Vwebit</div>
+<p class="text-on-surface dark:text-on-surface-variant font-body-sm text-body-sm max-w-sm">
+                    Empowering Indian SMEs with cutting-edge digital solutions, web development, and strategic marketing.
+                </p>
+<p class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-label-sm text-label-sm mt-md">
+                    © 2024 Vwebit Digital Solutions. All rights reserved. Serving Indian SMEs with pride.
+                </p>
+</div>
+<div class="col-span-1 flex flex-col space-y-sm">
+<h3 class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider mb-xs">Company</h3>
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-primary-fixed hover:underline opacity-90 hover:opacity-100 transition-opacity" href="#">Careers</a>
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-primary-fixed hover:underline opacity-90 hover:opacity-100 transition-opacity" href="#">Partner Program</a>
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-primary-fixed hover:underline opacity-90 hover:opacity-100 transition-opacity" href="#">Sitemap</a>
+</div>
+<div class="col-span-1 flex flex-col space-y-sm">
+<h3 class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider mb-xs">Legal</h3>
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-primary-fixed hover:underline opacity-90 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-primary-fixed hover:underline opacity-90 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

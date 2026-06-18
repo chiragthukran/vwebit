@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vwebit Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#191c1e",
+                      "on-surface": "#191c1e",
+                      "surface-container-high": "#e6e8ea",
+                      "secondary-fixed": "#dae2fd",
+                      "surface-container": "#eceef0",
+                      "primary-container": "#2563eb",
+                      "tertiary": "#48566a",
+                      "on-secondary-fixed": "#131b2e",
+                      "surface-bright": "#f7f9fb",
+                      "on-secondary-container": "#5c647a",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#dbe1ff",
+                      "background": "#f7f9fb",
+                      "surface": "#f7f9fb",
+                      "on-tertiary-container": "#e9f0ff",
+                      "tertiary-fixed": "#d5e3fc",
+                      "secondary-container": "#dae2fd",
+                      "tertiary-container": "#606e83",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "outline": "#737686",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "inverse-on-surface": "#eff1f3",
+                      "secondary": "#565e74",
+                      "inverse-surface": "#2d3133",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#434655",
+                      "surface-tint": "#0053db",
+                      "tertiary-fixed-dim": "#b9c7df",
+                      "outline-variant": "#c3c6d7",
+                      "inverse-primary": "#b4c5ff",
+                      "on-primary-container": "#eeefff",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#d8dadc",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#3a485b",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-primary-fixed": "#00174b",
+                      "surface-variant": "#e0e3e5",
+                      "on-tertiary-fixed": "#0d1c2e",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "error": "#ba1a1a",
+                      "surface-container-low": "#f2f4f6",
+                      "primary": "#004ac6",
+                      "on-secondary-fixed-variant": "#3f465c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "max-width": "1280px",
+                      "margin-mobile": "16px",
+                      "xs": "0.5rem",
+                      "md": "1.5rem",
+                      "sm": "1rem",
+                      "base": "4px",
+                      "gutter": "24px",
+                      "xl": "4rem",
+                      "lg": "2.5rem",
+                      "margin-desktop": "48px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Geist"
+                      ],
+                      "headline-xl": [
+                              "Geist"
+                      ],
+                      "headline-xl-mobile": [
+                              "Geist"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Geist"
+                      ],
+                      "label-md": [
+                              "Geist"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Geist"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "30px",
+                              {
+                                      "lineHeight": "38px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased md:hidden font-body-md text-body-md">
+<!-- TopNavBar (Mobile Shell) -->
+<nav class="bg-surface dark:bg-on-background docked full-width top-0 sticky border-b border-outline-variant dark:border-outline flat no shadows z-50">
+<div class="flex justify-between items-center h-20 px-margin-mobile max-w-max-width mx-auto">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed" href="/">Vwebit</a>
+<div class="flex items-center gap-sm">
+<!-- Search Icon for Mobile -->
+<button class="p-xs text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<!-- Hamburger Menu for Mobile -->
+<button class="p-xs text-secondary dark:text-secondary-fixed-dim hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+<!-- Note: Navigation links are hidden on mobile as per requirement, typically handled in a slide-out menu -->
+</nav>
+<main class="w-full">
+<!-- Blog Header -->
+<header class="px-margin-mobile py-lg text-center bg-surface-container-low">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface mb-xs">Insights &amp; Strategies</h1>
+<p class="font-body-md text-body-md text-secondary">Expert perspectives on digital transformation and B2B growth.</p>
+</header>
+<!-- Category Filter (Horizontal Scroll) -->
+<div class="w-full overflow-x-auto no-scrollbar border-b border-outline-variant">
+<div class="flex px-margin-mobile py-sm gap-sm min-w-max">
+<button class="px-md py-xs rounded-full bg-primary text-on-primary font-label-md text-label-md transition-opacity hover:opacity-90">All</button>
+<button class="px-md py-xs rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-colors hover:bg-surface-container-high border border-outline-variant">Digital Strategy</button>
+<button class="px-md py-xs rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-colors hover:bg-surface-container-high border border-outline-variant">Cloud Solutions</button>
+<button class="px-md py-xs rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-colors hover:bg-surface-container-high border border-outline-variant">UX Design</button>
+</div>
+</div>
+<!-- Blog Feed -->
+<div class="px-margin-mobile py-lg flex flex-col gap-lg">
+<!-- Featured Post -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow">
+<div class="w-full h-48 bg-surface-container relative">
+<img alt="Featured Post Image" class="w-full h-full object-cover" data-alt="A striking digital visualization of a global network or cloud infrastructure. High-contrast deep blue and stark white lighting evoke a sense of modern technological authority. The image reflects a professional B2B environment, focusing on scale and precision without human subjects. The composition is clean, expansive, and aligned with institutional modernism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbtsikv8nIX6e2I6TV-l2Qp_DbLdvMrL2k3xqD7EcUpH7WYCiM0LuF8Zxri_prw4UWLzmjvJWPsQZJ6WAYxOfXpMmvtXfq9B5FRvjNicMIvoYfE7c9vmpEOXd4AVo2_dZg1R7ZnHjz47uCbR9lVBQ6tXGsWrWaJuGopb6nlOqFHmI69jBLmDrFGCBRAluwhzDMGN3SVBYd_KpnlSAor6JOlSnykiC4pLNUCL9BakET0hSa7X_RumOltoRLRXxjl-xDKFh3LvT4QXFV"/>
+<div class="absolute top-sm left-sm px-xs py-base bg-surface-container-lowest/90 backdrop-blur-sm rounded text-primary font-label-sm text-label-sm border border-outline-variant">
+                        Featured
+                    </div>
+</div>
+<div class="p-md flex flex-col gap-xs">
+<div class="flex items-center gap-xs text-secondary font-label-sm text-label-sm">
+<span>Digital Strategy</span>
+<span>•</span>
+<span>Oct 24, 2024</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">Navigating Enterprise Legacy System Migration</h2>
+<p class="font-body-md text-body-md text-secondary line-clamp-3">A comprehensive guide to transitioning outdated infrastructure to modern cloud architectures while maintaining operational continuity and data integrity.</p>
+<a class="mt-sm font-label-md text-label-md text-primary flex items-center gap-xs hover:underline" href="#">
+                        Read Article <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Standard Post 1 -->
+<article class="flex gap-md items-start py-md border-b border-outline-variant last:border-0">
+<div class="flex-1 flex flex-col gap-xs">
+<div class="flex items-center gap-xs text-secondary font-label-sm text-label-sm">
+<span>Cloud Solutions</span>
+<span>•</span>
+<span>Oct 20, 2024</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface leading-snug">Optimizing AWS Costs for Mid-Market Firms</h3>
+<p class="font-body-sm text-body-sm text-secondary line-clamp-2">Strategic approaches to resource allocation and reserved instances.</p>
+</div>
+<div class="w-24 h-24 rounded shrink-0 overflow-hidden bg-surface-container">
+<img alt="Thumbnail" class="w-full h-full object-cover" data-alt="A close-up shot of a modern, minimalist data dashboard on a screen. Crisp, precise line charts and metrics in deep navy and bright white, conveying professional analytics. The lighting is bright and focused, emphasizing clarity and data-driven decision making. The aesthetic matches high-end B2B financial or tech services." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkhJ0lPxgzmWahvg2oFOa09zT0XnQORAAsR8KTz9w29_3n85oKvavZRVv7i8A-5wDvvIobOsssN9kfM7U6-6JTwgY5xEbvvHRa5mEo8xRFMGKVCJBQO5uUMljDypfCB4ziWhAWMBG0K0brhpy682E-Hn5BNpEd9kpnGznNrVpVQR9BSBW94o2UIO0PKAZpqKbVhRH7H4S2ZocEgotTT2fYeZqCAr_zMi2IK2_j0rKaolfAOOwL3sRp7jwAEfSPvCLJTB0LUmNRRHbz"/>
+</div>
+</article>
+<!-- Standard Post 2 -->
+<article class="flex gap-md items-start py-md border-b border-outline-variant last:border-0">
+<div class="flex-1 flex flex-col gap-xs">
+<div class="flex items-center gap-xs text-secondary font-label-sm text-label-sm">
+<span>UX Design</span>
+<span>•</span>
+<span>Oct 15, 2024</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface leading-snug">The ROI of Accessible B2B Software Interfaces</h3>
+<p class="font-body-sm text-body-sm text-secondary line-clamp-2">Why investing in accessibility standards drives long-term client retention.</p>
+</div>
+<div class="w-24 h-24 rounded shrink-0 overflow-hidden bg-surface-container">
+<img alt="Thumbnail" class="w-full h-full object-cover" data-alt="A clean, minimalist workspace featuring a high-end monitor displaying wireframes or architectural diagrams. The setting is bright and orderly, lit by soft natural light reflecting off white surfaces. The color palette is muted, focusing on whites, greys, and subtle corporate blue accents. It communicates meticulous planning and professional design rigor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJOKK_Wv8SBUgUAfiRbJbgI-V4IS-41C_C0-sJ_k-XIv1zCWYH6145TDxbrs9gNUC5jVBTGKk5A4v07T8ha_fbvAHTOV5vT6uKo1g2AyuLNbpFSwDnUsnkKil-4V0toPyq4i2lo-aFRvpNXkckV_P1ytOKD18BaD5ZW3wj48BULOd72nwT9AVdDbiWtVE_zYceBSrfRnCwFei5xw9jzVhDXQruEq_51VO03hJsy0S_vsWgNntF3pi0pHS7x4mKuEqIXOhy4nI4jBpk"/>
+</div>
+</article>
+<!-- Load More Button -->
+<button class="w-full py-sm border border-outline text-secondary font-label-md text-label-md rounded hover:bg-surface-container transition-colors mt-sm">
+                Load More Articles
+            </button>
+</div>
+<!-- Newsletter CTA -->
+<section class="bg-primary-container text-on-primary-container px-margin-mobile py-lg mt-lg">
+<div class="flex flex-col items-center text-center gap-md">
+<span class="material-symbols-outlined text-[48px]" data-icon="mail" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mail</span>
+<div>
+<h3 class="font-headline-md text-headline-md mb-xs">Stay Informed</h3>
+<p class="font-body-sm text-body-sm opacity-90">Get our latest insights delivered directly to your inbox monthly.</p>
+</div>
+<form class="w-full flex flex-col gap-sm">
+<input class="w-full px-md py-sm bg-surface-container-lowest text-on-surface border border-outline-variant rounded font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-outline" placeholder="Business Email" type="email"/>
+<button class="w-full py-sm bg-primary text-on-primary font-label-md text-label-md rounded hover:opacity-90 transition-opacity" type="submit">
+                        Subscribe
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-dim full-width border-t border-outline-variant dark:border-outline flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-xl px-margin-mobile max-w-max-width mx-auto">
+<div class="flex flex-col gap-sm mb-lg">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Vwebit</span>
+<p class="font-body-sm text-body-sm text-on-surface dark:text-on-surface-variant">© 2024 Vwebit Digital Solutions. All rights reserved. Serving Indian SMEs with pride.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant opacity-90 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed underline" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant opacity-90 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed underline" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant opacity-90 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed underline" href="#">Sitemap</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant opacity-90 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed underline" href="#">Careers</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant opacity-90 hover:opacity-100 transition-opacity hover:text-primary dark:hover:text-primary-fixed underline" href="#">Partner Program</a>
+</div>
+</div>
+</footer>
+<style>
+        /* Utility for horizontal scrolling without scrollbar */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

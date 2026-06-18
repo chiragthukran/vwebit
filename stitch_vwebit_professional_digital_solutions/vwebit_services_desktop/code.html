@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vwebit - Our Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1e",
+                        "on-surface": "#191c1e",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed": "#dae2fd",
+                        "surface-container": "#eceef0",
+                        "primary-container": "#2563eb",
+                        "tertiary": "#48566a",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-bright": "#f7f9fb",
+                        "on-secondary-container": "#5c647a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "background": "#f7f9fb",
+                        "surface": "#f7f9fb",
+                        "on-tertiary-container": "#e9f0ff",
+                        "tertiary-fixed": "#d5e3fc",
+                        "secondary-container": "#dae2fd",
+                        "tertiary-container": "#606e83",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "outline": "#737686",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary": "#565e74",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#434655",
+                        "surface-tint": "#0053db",
+                        "tertiary-fixed-dim": "#b9c7df",
+                        "outline-variant": "#c3c6d7",
+                        "inverse-primary": "#b4c5ff",
+                        "on-primary-container": "#eeefff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#3a485b",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed": "#00174b",
+                        "surface-variant": "#e0e3e5",
+                        "on-tertiary-fixed": "#0d1c2e",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f2f4f6",
+                        "primary": "#004ac6",
+                        "on-secondary-fixed-variant": "#3f465c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "xs": "0.5rem",
+                        "md": "1.5rem",
+                        "sm": "1rem",
+                        "base": "4px",
+                        "gutter": "24px",
+                        "xl": "4rem",
+                        "lg": "2.5rem",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "headline-xl": ["Geist"],
+                        "headline-xl-mobile": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Geist"],
+                        "label-md": ["Geist"],
+                        "body-sm": ["Inter"],
+                        "label-sm": ["Geist"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-on-background w-full top-0 sticky z-50 border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-max-width mx-auto">
+<div class="flex items-center gap-md">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed" href="#">
+                    Vwebit
+                </a>
+</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 scale-95 active:opacity-80 transition-transform" href="#">Services</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 scale-95 active:opacity-80 transition-transform" href="#">Industries</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 scale-95 active:opacity-80 transition-transform" href="#">Portfolio</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 scale-95 active:opacity-80 transition-transform" href="#">About</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 scale-95 active:opacity-80 transition-transform" href="#">Blog</a>
+</nav>
+<div class="hidden md:flex items-center gap-sm">
+<button class="font-label-md text-label-md text-primary border border-primary px-4 py-2 rounded-DEFAULT hover:bg-primary/5 transition-colors">Contact</button>
+<button class="font-label-md text-label-md text-on-primary bg-primary px-4 py-2 rounded-DEFAULT hover:bg-primary/90 transition-colors">Get Consultation</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-xl px-margin-desktop max-w-max-width mx-auto text-center">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-md">Comprehensive Digital Solutions</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-3xl mx-auto mb-lg">
+                We provide end-to-end digital services designed to accelerate your growth. From robust web platforms to targeted local visibility, our solutions are engineered for measurable business impact.
+            </p>
+</section>
+<!-- Services Grid (Bento Style) -->
+<section class="py-lg px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main Feature Card: Web Development -->
+<div class="col-span-1 md:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg relative overflow-hidden group hover:shadow-sm transition-shadow duration-300">
+<div class="absolute top-0 right-0 p-lg opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px] text-primary">code</span>
+</div>
+<div class="relative z-10">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-md text-primary">
+<span class="material-symbols-outlined">developer_mode</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Custom Web Development</h2>
+<p class="font-body-md text-body-md text-secondary mb-md max-w-xl">
+                            Scalable, high-performance web applications tailored to your specific operational workflows. We utilize modern tech stacks to ensure long-term viability and seamless user experiences.
+                        </p>
+<ul class="space-y-sm mb-lg">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Responsive &amp; Mobile-First Design</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">E-commerce Integration</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">API Development &amp; Integration</span>
+</li>
+</ul>
+<button class="font-label-md text-label-md text-primary flex items-center gap-xs hover:gap-sm transition-all">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Secondary Feature: Local SEO -->
+<div class="col-span-1 md:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg flex flex-col justify-between hover:shadow-sm transition-shadow duration-300">
+<div>
+<div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-sm text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Local SEO Strategy</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-md">
+                            Dominate your local market. We optimize your online presence to ensure you capture high-intent local search traffic.
+                        </p>
+</div>
+<div>
+<div class="bg-surface-container-low p-sm rounded-DEFAULT flex items-center gap-sm mb-sm border border-outline-variant">
+<span class="material-symbols-outlined text-primary">trending_up</span>
+<span class="font-label-sm text-label-sm text-on-surface">Targeted keyword research</span>
+</div>
+<button class="font-label-md text-label-md text-primary flex items-center gap-xs hover:gap-sm transition-all mt-auto">
+                            Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Secondary Feature: GBP Optimization -->
+<div class="col-span-1 md:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg hover:shadow-sm transition-shadow duration-300">
+<div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-sm text-primary">
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Google Business Profile</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-md">
+                        Maximize your visibility on Google Maps and local search packs with comprehensive profile management and review strategies.
+                    </p>
+<button class="font-label-md text-label-md text-primary flex items-center gap-xs hover:gap-sm transition-all mt-auto">
+                        Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Secondary Feature: Website Maintenance -->
+<div class="col-span-1 md:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg hover:shadow-sm transition-shadow duration-300">
+<div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-sm text-primary">
+<span class="material-symbols-outlined">build_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Website Maintenance</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-md">
+                        Ensure your digital assets remain secure, fast, and up-to-date with our proactive maintenance and support retainers.
+                    </p>
+<button class="font-label-md text-label-md text-primary flex items-center gap-xs hover:gap-sm transition-all mt-auto">
+                        Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Secondary Feature: Custom Software -->
+<div class="col-span-1 md:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg hover:shadow-sm transition-shadow duration-300">
+<div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-sm text-primary">
+<span class="material-symbols-outlined">app_blocking</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Custom Software</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-md">
+                        Purpose-built software solutions to automate internal processes, manage data efficiently, and scale your operations.
+                    </p>
+<button class="font-label-md text-label-md text-primary flex items-center gap-xs hover:gap-sm transition-all mt-auto">
+                        Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-margin-desktop max-w-max-width mx-auto">
+<div class="bg-surface-container-low border border-outline-variant rounded-xl p-xl text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Ready to elevate your digital presence?</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-lg max-w-2xl mx-auto">
+                    Schedule a consultation with our strategic team to discuss your objectives and map out a customized digital solution.
+                </p>
+<div class="flex justify-center gap-md">
+<button class="font-label-md text-label-md text-on-primary bg-primary px-6 py-3 rounded-DEFAULT hover:bg-primary/90 transition-colors shadow-sm">Get a Free Consultation</button>
+<button class="font-label-md text-label-md text-on-surface bg-surface border border-outline px-6 py-3 rounded-DEFAULT hover:bg-surface-container transition-colors">View Pricing</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-dim border-t border-outline-variant dark:border-outline w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-xl px-margin-desktop max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-sm">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Vwebit</span>
+<p class="font-body-sm text-body-sm text-on-surface dark:text-on-surface-variant mt-sm">
+                    © 2024 Vwebit Digital Solutions. All rights reserved. Serving Indian SMEs with pride.
+                </p>
+</div>
+<div class="col-span-1 flex flex-col gap-sm">
+<span class="font-label-md text-label-md text-on-surface font-bold">Company</span>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">About Us</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Careers</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Partner Program</a>
+</div>
+<div class="col-span-1 flex flex-col gap-sm">
+<span class="font-label-md text-label-md text-on-surface font-bold">Legal</span>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container dark:text-on-secondary-fixed-variant hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Sitemap</a>
+</div>
+<div class="col-span-1 flex flex-col gap-sm">
+<span class="font-label-md text-label-md text-on-surface font-bold">Connect</span>
+<div class="flex gap-sm">
+<a class="text-on-secondary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="text-on-secondary-container hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">phone</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

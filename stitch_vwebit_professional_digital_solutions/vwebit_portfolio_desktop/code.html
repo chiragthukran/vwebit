@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vwebit - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&amp;family=Geist:wght@400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1e",
+                        "on-surface": "#191c1e",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed": "#dae2fd",
+                        "surface-container": "#eceef0",
+                        "primary-container": "#2563eb",
+                        "tertiary": "#48566a",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-bright": "#f7f9fb",
+                        "on-secondary-container": "#5c647a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "background": "#f7f9fb",
+                        "surface": "#f7f9fb",
+                        "on-tertiary-container": "#e9f0ff",
+                        "tertiary-fixed": "#d5e3fc",
+                        "secondary-container": "#dae2fd",
+                        "tertiary-container": "#606e83",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "outline": "#737686",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary": "#565e74",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#434655",
+                        "surface-tint": "#0053db",
+                        "tertiary-fixed-dim": "#b9c7df",
+                        "outline-variant": "#c3c6d7",
+                        "inverse-primary": "#b4c5ff",
+                        "on-primary-container": "#eeefff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#3a485b",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed": "#00174b",
+                        "surface-variant": "#e0e3e5",
+                        "on-tertiary-fixed": "#0d1c2e",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f2f4f6",
+                        "primary": "#004ac6",
+                        "on-secondary-fixed-variant": "#3f465c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "xs": "0.5rem",
+                        "md": "1.5rem",
+                        "sm": "1rem",
+                        "base": "4px",
+                        "gutter": "24px",
+                        "xl": "4rem",
+                        "lg": "2.5rem",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "headline-xl": ["Geist"],
+                        "headline-xl-mobile": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Geist"],
+                        "label-md": ["Geist"],
+                        "body-sm": ["Inter"],
+                        "label-sm": ["Geist"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        h1, h2, h3, h4, h5, h6, .font-headline-xl, .font-headline-lg, .font-headline-md, .font-label-md, .font-label-sm { font-family: 'Geist', sans-serif; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-on-background border-b border-outline-variant dark:border-outline full-width top-0 sticky z-50">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-max-width mx-auto">
+<!-- Brand -->
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed scale-95 active:opacity-80 transition-transform" href="#">
+                Vwebit
+            </a>
+<!-- Navigation Links -->
+<div class="hidden md:flex space-x-8 items-center h-full">
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Services</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Industries</a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 h-full flex items-center" href="#">Portfolio</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">About</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-label-md text-label-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Blog</a>
+</div>
+<!-- Actions -->
+<div class="hidden md:flex space-x-4 items-center">
+<button class="font-label-md text-label-md text-secondary border border-outline px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200 scale-95 active:opacity-80 transition-transform">Contact</button>
+<button class="font-label-md text-label-md text-on-primary bg-primary px-4 py-2 rounded hover:brightness-90 transition-all duration-200 scale-95 active:opacity-80 transition-transform">Get Consultation</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-xl px-margin-desktop max-w-max-width mx-auto">
+<div class="max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-sm">Our Portfolio</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Transforming complex business challenges into elegant, high-performance digital solutions. Explore our selected case studies demonstrating our institutional approach to web engineering.</p>
+</div>
+</section>
+<!-- Case Studies Gallery (Bento Grid Style) -->
+<section class="py-lg px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Featured Case Study - Full Width -->
+<div class="md:col-span-12 bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow duration-300">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-lg flex flex-col justify-center">
+<span class="inline-block bg-primary-container text-on-primary-container font-label-sm text-label-sm px-2 py-1 rounded w-max mb-sm">FinTech</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Nexus Global Banking Portal</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">A complete architectural redesign of legacy banking infrastructure, delivering a modern, secure, and intuitive portal for high-net-worth clients.</p>
+<div class="grid grid-cols-2 gap-sm mb-lg border-t border-outline-variant pt-sm">
+<div>
+<h3 class="font-label-md text-label-md text-secondary mb-base">The Challenge</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fragmented user experience and high latency in transaction processing.</p>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-base">The Result</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">40% reduction in latency and a unified dashboard increasing engagement by 25%.</p>
+</div>
+</div>
+<button class="font-label-md text-label-md text-primary border border-primary px-4 py-2 rounded hover:bg-primary-fixed transition-colors duration-200 w-max">View Full Case Study</button>
+</div>
+<div class="relative min-h-[300px] md:min-h-full bg-surface-container-high">
+<img alt="Case Study Image" class="absolute inset-0 w-full h-full object-cover" data-alt="A clean, high-quality professional mockup of a financial dashboard displayed on a modern computer monitor. The screen shows detailed data visualizations, charts, and banking metrics in a refined, minimalist light-mode interface. The setting is a bright, corporate office environment with soft natural lighting streaming in, emphasizing a high-end B2B aesthetic with corporate blue accents. The mood is analytical, authoritative, and technologically sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuO0oRCBsRGyRPAgDytk1lH3VhNT_LbVPgaTE0Gkh-GMNbKv35forxIgiFiRsz3SuVqIREWOxOqMrD-G5dQ6iOxR4ZP9wS0FVbV-FGqrjioJMxk684QCPf-ucBJ48_rf8-NMNRkd2Kmscpf6yO85K5EZPV70nYjOhHV34X_cR37xB1qBtqWajifYJ5bvhAYr1fhkGzzKVlcBiIwIhRjq6o8k8L5SUS4tNDjOpht5440NPjbDnUSBGd2TK0yrVyn8FJj1eR_AarOS73"/>
+</div>
+</div>
+</div>
+<!-- Secondary Case Study 1 -->
+<div class="md:col-span-6 bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow duration-300 flex flex-col">
+<div class="h-64 bg-surface-container relative">
+<img alt="Case Study Image" class="w-full h-full object-cover" data-alt="A sleek, minimalist digital mockup of an e-commerce analytics platform displayed on a sleek laptop screen. The interface features crisp, clean lines, data tables, and minimal graphs in a predominantly white and light grey color scheme. The laptop rests on an immaculate white desk in a well-lit, contemporary workspace, reflecting a quiet competence and institutional modernism. The lighting is high-key and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAuz6ZQ-puGddWtxn0uiSeGlouSgluLnNfAGa4rvOCChry_jjXXM0lVgp1qUvky2IaNWU93sq7_DbfJwxpDSIDM2srStMf3Hmrp5zwD4ANdy1_srAtzf3zhnxkkTsZNrYVoRVJ26gX-HbHErH8emkfZJ7AaFVMwUZDOSlLNTZmQ6HfthuRvG48TWWB6POZoR8KbcXIDE_sOd2crfmHDcuzsKdoLivYoUkwEFBACz9sfdduPrtotsbTjHfwwxsRHWEM6Jh0h5cut7Ue"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<span class="inline-block bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-1 rounded w-max mb-sm">E-Commerce</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Aura Retail Analytics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Streamlining supply chain data into actionable insights through a custom B2B dashboard.</p>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center group" href="#">
+                            Read details 
+                            <span class="material-symbols-outlined ml-1 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Secondary Case Study 2 -->
+<div class="md:col-span-6 bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-shadow duration-300 flex flex-col">
+<div class="h-64 bg-surface-container relative">
+<img alt="Case Study Image" class="w-full h-full object-cover" data-alt="A high-end professional mockup of a healthcare management web application shown on a modern tablet device. The UI design is rigorous and grid-aligned, using ample whitespace and a strict typographic hierarchy. The tablet is held by a professional in a bright, modern clinical office setting with subtle architectural details in the background. The aesthetic communicates reliability, clarity, and precision in digital health." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZYfsBQ1HJkVPvx_pQFGoRgxSjYWC1ixxXbIjO878G4Ogpg_hrwijdjQumgIhERkrtu1dOKgEwbgML-jV3_daGsUOU-H6m8BXUw_LqbCQ_37D_45-a0-iRofBVdhDZJmFSglPFFEO8ZEQUfU0Q-fOVVmOxW6e0id8wrNFgc7PBqT37Wa6cIakGvpoc-PtEofpwkeuwXO7ZCQnggjhspOiZY25t0DdB2TOMpZOowxCSL9nEo9Kcr9pKQJrxtLFCqdJ_BkJf7hWqsWLE"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<span class="inline-block bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-2 py-1 rounded w-max mb-sm">Healthcare</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">MediSync Patient Portal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">A secure, HIPAA-compliant patient management system prioritizing user accessibility.</p>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center group" href="#">
+                            Read details
+                            <span class="material-symbols-outlined ml-1 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-xl px-margin-desktop max-w-max-width mx-auto">
+<div class="bg-surface-container-low border border-outline-variant rounded-xl p-lg text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Ready to elevate your digital presence?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl mx-auto">Partner with us to build robust, scalable solutions tailored to your enterprise needs.</p>
+<button class="font-label-md text-label-md text-on-primary bg-primary px-6 py-3 rounded hover:brightness-90 transition-all duration-200">Start a Project</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-dim border-t border-outline-variant dark:border-outline full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-xl px-margin-desktop max-w-max-width mx-auto">
+<!-- Brand & Copyright -->
+<div class="flex flex-col space-y-4">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed opacity-90 hover:opacity-100 transition-opacity">Vwebit</span>
+<p class="font-body-sm text-body-sm text-on-surface dark:text-on-surface-variant">
+                    © 2024 Vwebit Digital Solutions. All rights reserved. Serving Indian SMEs with pride.
+                </p>
+</div>
+<!-- Empty Columns for alignment based on JSON structure -->
+<div></div>
+<div></div>
+<!-- Links -->
+<div class="flex flex-col space-y-2 md:items-end">
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Sitemap</a>
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Careers</a>
+<a class="text-on-secondary-container dark:text-on-secondary-fixed-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed underline opacity-90 hover:opacity-100 transition-opacity" href="#">Partner Program</a>
+</div>
+</div>
+</footer>
+</body></html>

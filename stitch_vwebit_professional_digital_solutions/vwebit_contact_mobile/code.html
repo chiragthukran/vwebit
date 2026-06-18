@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vwebit - Contact</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Inter and Geist -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Geist:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Style Guidance -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1e",
+                        "on-surface": "#191c1e",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed": "#dae2fd",
+                        "surface-container": "#eceef0",
+                        "primary-container": "#2563eb",
+                        "tertiary": "#48566a",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-bright": "#f7f9fb",
+                        "on-secondary-container": "#5c647a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "background": "#f7f9fb",
+                        "surface": "#f7f9fb",
+                        "on-tertiary-container": "#e9f0ff",
+                        "tertiary-fixed": "#d5e3fc",
+                        "secondary-container": "#dae2fd",
+                        "tertiary-container": "#606e83",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "outline": "#737686",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary": "#565e74",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#434655",
+                        "surface-tint": "#0053db",
+                        "tertiary-fixed-dim": "#b9c7df",
+                        "outline-variant": "#c3c6d7",
+                        "inverse-primary": "#b4c5ff",
+                        "on-primary-container": "#eeefff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#3a485b",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed": "#00174b",
+                        "surface-variant": "#e0e3e5",
+                        "on-tertiary-fixed": "#0d1c2e",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f2f4f6",
+                        "primary": "#004ac6",
+                        "on-secondary-fixed-variant": "#3f465c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "xs": "0.5rem",
+                        "md": "1.5rem",
+                        "sm": "1rem",
+                        "base": "4px",
+                        "gutter": "24px",
+                        "xl": "4rem",
+                        "lg": "2.5rem",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "headline-xl": ["Geist"],
+                        "headline-xl-mobile": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Geist"],
+                        "label-md": ["Geist"],
+                        "body-sm": ["Inter"],
+                        "label-sm": ["Geist"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (Mobile Adapted from JSON) -->
+<nav class="bg-surface sticky top-0 z-50 shadow-sm border-b border-outline-variant">
+<div class="flex justify-between items-center h-16 px-margin-mobile">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md font-bold text-primary" href="#">Vwebit</a>
+<!-- Mobile Menu Toggle (Links hidden per rule, using standard mobile pattern) -->
+<button aria-label="Open Menu" class="p-2 text-on-surface flex items-center justify-center rounded-lg hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow px-margin-mobile py-lg flex flex-col gap-lg w-full max-w-[600px] mx-auto">
+<!-- Header Section -->
+<header class="text-center pt-xs pb-sm">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-background mb-base">Let's Connect</h1>
+<p class="font-body-md text-body-md text-secondary">Have a project in mind? Reach out and our team will get back to you shortly.</p>
+</header>
+<!-- Prominent WhatsApp CTA -->
+<section>
+<a class="w-full flex items-center justify-center gap-xs bg-[#25D366] text-white py-sm rounded-lg font-label-md text-label-md hover:bg-[#1DA851] transition-colors shadow-sm ring-1 ring-inset ring-black/10" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                Chat on WhatsApp
+            </a>
+<div class="flex items-center gap-4 mt-sm opacity-60">
+<div class="flex-grow h-px bg-outline-variant"></div>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">or email us</span>
+<div class="flex-grow h-px bg-outline-variant"></div>
+</div>
+</section>
+<!-- Form Section -->
+<section class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm relative overflow-hidden">
+<!-- Subtle background accent to elevate the card slightly -->
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<form action="#" class="flex flex-col gap-md mt-xs" method="POST">
+<!-- Name Input -->
+<div class="flex flex-col gap-base">
+<label class="font-label-md text-label-md text-on-surface" for="name">Full Name</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-sm py-xs focus:ring-2 focus:ring-primary focus:border-primary focus:outline-none transition-shadow font-body-md text-body-md placeholder:text-outline" id="name" name="name" placeholder="John Doe" type="text"/>
+</div>
+<!-- Email Input -->
+<div class="flex flex-col gap-base">
+<label class="font-label-md text-label-md text-on-surface" for="email">Work Email</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-sm py-xs focus:ring-2 focus:ring-primary focus:border-primary focus:outline-none transition-shadow font-body-md text-body-md placeholder:text-outline" id="email" name="email" placeholder="john@company.com" type="email"/>
+</div>
+<!-- Interest Select -->
+<div class="flex flex-col gap-base">
+<label class="font-label-md text-label-md text-on-surface" for="interest">I'm interested in...</label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg pl-sm pr-10 py-xs focus:ring-2 focus:ring-primary focus:border-primary focus:outline-none appearance-none transition-shadow font-body-md text-body-md" id="interest" name="interest">
+<option disabled="" selected="" value="">Select a service</option>
+<option value="consulting">Consulting</option>
+<option value="development">Development</option>
+<option value="design">Design</option>
+<option value="other">Other</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Message Input -->
+<div class="flex flex-col gap-base">
+<label class="font-label-md text-label-md text-on-surface" for="message">Message</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-sm py-xs focus:ring-2 focus:ring-primary focus:border-primary focus:outline-none transition-shadow font-body-md text-body-md placeholder:text-outline resize-none" id="message" name="message" placeholder="Tell us briefly about your needs..." rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary text-on-primary py-sm rounded-lg font-label-md text-label-md hover:bg-on-primary-fixed-variant transition-colors mt-xs flex items-center justify-center gap-xs" type="submit">
+                    Send Message
+                    <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</form>
+</section>
+<!-- Direct Contact Info Cards -->
+<section class="flex flex-col gap-sm pb-lg">
+<div class="flex items-center gap-sm p-sm bg-surface-container-lowest rounded-lg border border-outline-variant">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary mb-1">Email Us Directly</p>
+<a class="font-body-md text-body-md text-on-surface font-medium hover:text-primary transition-colors" href="mailto:contact@vwebit.com">contact@vwebit.com</a>
+</div>
+</div>
+<div class="flex items-center gap-sm p-sm bg-surface-container-lowest rounded-lg border border-outline-variant">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary mb-1">Global Headquarters</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">Serving Indian SMEs</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Mobile Adapted from JSON) -->
+<footer class="bg-surface-container-low border-t border-outline-variant mt-auto">
+<div class="py-lg px-margin-mobile flex flex-col gap-lg">
+<!-- Brand -->
+<div class="font-headline-md text-headline-md font-bold text-primary">Vwebit</div>
+<!-- Links (Stacked for mobile) -->
+<div class="flex flex-col gap-sm">
+<a class="text-on-secondary-container font-label-md text-label-md hover:text-primary transition-colors py-1" href="#">Privacy Policy</a>
+<a class="text-on-secondary-container font-label-md text-label-md hover:text-primary transition-colors py-1" href="#">Terms of Service</a>
+<a class="text-on-secondary-container font-label-md text-label-md hover:text-primary transition-colors py-1" href="#">Sitemap</a>
+<a class="text-on-secondary-container font-label-md text-label-md hover:text-primary transition-colors py-1" href="#">Careers</a>
+<a class="text-on-secondary-container font-label-md text-label-md hover:text-primary transition-colors py-1" href="#">Partner Program</a>
+</div>
+<!-- Copyright -->
+<div class="border-t border-outline-variant pt-sm mt-xs">
+<p class="font-body-sm text-body-sm text-on-surface opacity-80">
+                    © 2024 Vwebit Digital Solutions. All rights reserved. Serving Indian SMEs with pride.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

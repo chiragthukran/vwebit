@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vwebit - Our Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1e",
+                        "on-surface": "#191c1e",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed": "#dae2fd",
+                        "surface-container": "#eceef0",
+                        "primary-container": "#2563eb",
+                        "tertiary": "#48566a",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-bright": "#f7f9fb",
+                        "on-secondary-container": "#5c647a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "background": "#f7f9fb",
+                        "surface": "#f7f9fb",
+                        "on-tertiary-container": "#e9f0ff",
+                        "tertiary-fixed": "#d5e3fc",
+                        "secondary-container": "#dae2fd",
+                        "tertiary-container": "#606e83",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "outline": "#737686",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary": "#565e74",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#434655",
+                        "surface-tint": "#0053db",
+                        "tertiary-fixed-dim": "#b9c7df",
+                        "outline-variant": "#c3c6d7",
+                        "inverse-primary": "#b4c5ff",
+                        "on-primary-container": "#eeefff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#3a485b",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed": "#00174b",
+                        "surface-variant": "#e0e3e5",
+                        "on-tertiary-fixed": "#0d1c2e",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f2f4f6",
+                        "primary": "#004ac6",
+                        "on-secondary-fixed-variant": "#3f465c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "xs": "0.5rem",
+                        "md": "1.5rem",
+                        "sm": "1rem",
+                        "base": "4px",
+                        "gutter": "24px",
+                        "xl": "4rem",
+                        "lg": "2.5rem",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Geist"],
+                        "headline-xl": ["Geist"],
+                        "headline-xl-mobile": ["Geist"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Geist"],
+                        "label-md": ["Geist"],
+                        "body-sm": ["Inter"],
+                        "label-sm": ["Geist"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Mobile Optimized - Hidden Navigation Links for Mobile, Burger Menu Added) -->
+<header class="bg-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">Vwebit</div>
+<!-- Desktop Navigation (Hidden on Mobile) -->
+<nav class="hidden md:flex gap-md items-center">
+<a class="text-secondary font-label-md hover:text-primary transition-colors duration-200" href="#">Services</a>
+<a class="text-secondary font-label-md hover:text-primary transition-colors duration-200" href="#">Industries</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md hover:text-primary transition-colors duration-200" href="#">Portfolio</a>
+<a class="text-secondary font-label-md hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="text-secondary font-label-md hover:text-primary transition-colors duration-200" href="#">Blog</a>
+</nav>
+<div class="hidden md:flex gap-sm items-center">
+<button class="font-label-md text-label-md text-primary border border-primary rounded-lg px-md py-sm hover:bg-surface-container transition-colors duration-200 scale-95 active:opacity-80">Contact</button>
+<button class="font-label-md text-label-md bg-primary text-on-primary rounded-lg px-md py-sm hover:brightness-90 transition-all duration-200 scale-95 active:opacity-80">Get Consultation</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Menu" class="md:hidden text-primary p-xs">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</header>
+<main class="pb-xl">
+<!-- Hero Section -->
+<section class="px-margin-mobile py-lg text-center bg-surface-container-low border-b border-outline-variant">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-background mb-sm">Our Work</h1>
+<p class="font-body-md text-body-md text-secondary max-w-[90%] mx-auto mb-md">Delivering high-performance digital experiences for modern Indian businesses.</p>
+</section>
+<!-- Portfolio Grid (Mobile Bento Style) -->
+<section class="px-margin-mobile py-lg space-y-lg">
+<!-- Project 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col">
+<div class="h-48 w-full bg-surface-container-high relative">
+<img alt="FinTech Dashboard UI" class="w-full h-full object-cover" data-alt="A clean, modern FinTech dashboard displayed on a high-resolution tablet screen, resting on a sleek dark marble desk. Soft, diffuse lighting highlights the crisp white interface elements and vibrant blue data visualization charts. The surrounding environment is a minimalist professional office setting, conveying trust and advanced technological capability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC_BQd6-wowQuGLkluEXdwO-JjtuKaocTZ3J4ivchB8fWrLMWg6cW7U-NaRaEhbxFnGifjZ7TNjkm1PGpbfKI4CwLn2iZ_eopnqiZHccaF2in-eiZBgc5wF7Kqoq9yUn4309JLE31K49MUaxhV0tGmVtgS6XzOmlOSD7m7Asrp4TowbQygmSyI1iPMnx4zEsubbK8q1U1rsjulEyjD7kmik9D_OIG2AVaqLENPwdQgMCFPFejum4TB34P7sjGgL5SA5mUWcRAzMiY7"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest px-xs py-base rounded text-label-sm font-label-sm text-primary border border-outline-variant shadow-sm">FinTech</div>
+</div>
+<div class="p-md flex flex-col gap-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">FinServe Analytics</h2>
+<p class="font-body-sm text-body-sm text-secondary">A comprehensive dashboard redesign focusing on data clarity and rapid transaction processing for enterprise clients.</p>
+<div class="flex flex-wrap gap-xs mt-xs">
+<span class="bg-surface-container text-secondary text-[10px] uppercase font-semibold tracking-wider px-2 py-1 rounded">React</span>
+<span class="bg-surface-container text-secondary text-[10px] uppercase font-semibold tracking-wider px-2 py-1 rounded">Tailwind</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col">
+<div class="h-48 w-full bg-surface-container-high relative">
+<img alt="E-commerce Platform" class="w-full h-full object-cover" data-alt="A vibrant, user-friendly e-commerce website interface shown on a modern smartphone, held by a person in a brightly lit, contemporary retail environment. The screen displays high-quality product images of artisanal goods with clear, bold typography and intuitive navigation buttons. The overall tone is fresh, accessible, and retail-focused." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHO9I0xZ_oMowf-tQvc3GFMv6nxCxZJH9o-pXLAL9KhYRrFdmIgBHxKUxSdq4QmxT96bUmbiKblteRR8KJKQRy3oG_DEn9vmkODUICMNbKERLHvlmPDcWfdqFR2IgtCimWrjWU4KYwlz-Tuz_lF6lmudvdKIR4bqeZR4ZmueRNurCxQo7KVIsMBJa9q7XrAItftSKKSz2aYJr5LEDMh6RXG7DWXLJqIQsFQrflAUxHNMEVFP4EIarWpCEwlJrnIF8FvWb3KRImqurK"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest px-xs py-base rounded text-label-sm font-label-sm text-primary border border-outline-variant shadow-sm">Retail</div>
+</div>
+<div class="p-md flex flex-col gap-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Artisan Market</h2>
+<p class="font-body-sm text-body-sm text-secondary">A scalable e-commerce platform optimized for mobile conversions, featuring seamless checkout and inventory synchronization.</p>
+<div class="flex flex-wrap gap-xs mt-xs">
+<span class="bg-surface-container text-secondary text-[10px] uppercase font-semibold tracking-wider px-2 py-1 rounded">Next.js</span>
+<span class="bg-surface-container text-secondary text-[10px] uppercase font-semibold tracking-wider px-2 py-1 rounded">Stripe</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col">
+<div class="h-48 w-full bg-surface-container-high relative">
+<img alt="Corporate Real Estate Website" class="w-full h-full object-cover" data-alt="A sophisticated corporate real estate website displayed on a sleek laptop screen, situated in a high-end, glass-walled conference room overlooking a modern city skyline. The website features expansive hero images of commercial properties, stark white space, and elegant, authoritative typography. The atmosphere is highly professional and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-LqDJroiYEX4xvc82_-7j9X4EHrq2NJpLpv8AKRaXuF5r5PKZ2cp2A5dxXChxNg0cnqrCIXJrtUVHeL5IqYpbPV-A2S-fpYbKErGjujlnUikg6-YmzTnemLzP6lNUX13vFr8kxeBs58V7zUNgW_8iIM-7BJdW5-VPue0mUULGnsU0qZyzLJZ6l9ObgxlypkJac5ac9rXtwz_Ysc8Fjoqv2MKymYFubP2wGEaDcXAdvbKxO8u2f7LUEHw1CaeiCd46OSU1OsxfhptC"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest px-xs py-base rounded text-label-sm font-label-sm text-primary border border-outline-variant shadow-sm">Real Estate</div>
+</div>
+<div class="p-md flex flex-col gap-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Prime Properties</h2>
+<p class="font-body-sm text-body-sm text-secondary">An authoritative corporate portal designed to showcase high-value commercial assets with integrated virtual tours.</p>
+<div class="flex flex-wrap gap-xs mt-xs">
+<span class="bg-surface-container text-secondary text-[10px] uppercase font-semibold tracking-wider px-2 py-1 rounded">Vue.js</span>
+<span class="bg-surface-container text-secondary text-[10px] uppercase font-semibold tracking-wider px-2 py-1 rounded">WebGL</span>
+</div>
+</div>
+</div>
+<!-- Load More Action -->
+<div class="flex justify-center mt-lg">
+<button class="font-label-md text-label-md text-primary border border-primary rounded-lg px-md py-sm hover:bg-surface-container transition-colors duration-200 flex items-center gap-xs">
+                    View More Projects
+                    <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</button>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-margin-mobile py-xl bg-surface-container text-center mt-lg border-t border-outline-variant">
+<h2 class="font-headline-lg-mobile text-headline-xl-mobile text-on-background mb-sm">Ready to upgrade your digital presence?</h2>
+<p class="font-body-md text-body-md text-secondary mb-lg max-w-[80%] mx-auto">Let's discuss how we can engineer a solution tailored to your business goals.</p>
+<button class="w-full font-label-md text-label-md bg-primary text-on-primary rounded-lg px-md py-md hover:brightness-90 transition-all duration-200">Start a Conversation</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="flex flex-col gap-sm mb-lg md:mb-0">
+<div class="font-headline-md text-headline-md font-bold text-primary">Vwebit</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container">© 2024 Vwebit Digital Solutions. All rights reserved. Serving Indian SMEs with pride.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline transition-opacity opacity-90 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline transition-opacity opacity-90 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline transition-opacity opacity-90 hover:opacity-100" href="#">Sitemap</a>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline transition-opacity opacity-90 hover:opacity-100" href="#">Careers</a>
+<a class="font-label-sm text-label-sm text-on-secondary-container hover:text-primary underline transition-opacity opacity-90 hover:opacity-100" href="#">Partner Program</a>
+</div>
+</div>
+</footer>
+</body></html>
