@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description:
     "Google Business Profile optimization services for Indian businesses. Rank in Google Maps, attract local customers, and get more calls. Expert GBP optimization from Vwebit.",
   keywords: ["Google Business Profile optimization India", "Google My Business optimization India", "GBP optimization India"],
-  alternates: { canonical: "https://vwebit.com/google-business-profile" },
+  alternates: { canonical: "https://vwebit.xyz/google-business-profile" },
   openGraph: {
     title: "Google Business Profile Optimization India | Vwebit",
     description: "Optimise your Google Business Profile to rank in Google Maps and get more local customers.",
-    url: "https://vwebit.com/google-business-profile",
+    url: "https://vwebit.xyz/google-business-profile",
   },
 };
 

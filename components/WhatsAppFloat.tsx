@@ -13,6 +13,7 @@ export function WhatsAppFloat() {
         target="_blank"
         rel="noopener noreferrer"
         id="whatsapp-float-btn"
+        data-tracking="whatsapp_click"
         aria-label="Chat with Vwebit on WhatsApp"
         className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/50"
       >

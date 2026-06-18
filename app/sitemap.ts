@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = "https://vwebit.com";
+const BASE_URL = "https://vwebit.xyz";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

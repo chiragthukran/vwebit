@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "About Vwebit — Website & SEO Agency for Indian SMEs",
   description:
     "Vwebit is a website development and SEO agency based in Jalandhar, Punjab, helping small businesses across India get more leads through professional websites and local SEO.",
-  alternates: { canonical: "https://vwebit.com/about" },
+  alternates: { canonical: "https://vwebit.xyz/about" },
   openGraph: {
     title: "About Vwebit | Website & SEO for Indian SMEs",
     description: "Based in Jalandhar, Punjab. Helping Indian SMEs grow online through professional websites and SEO.",
-    url: "https://vwebit.com/about",
+    url: "https://vwebit.xyz/about",
   },
 };
 

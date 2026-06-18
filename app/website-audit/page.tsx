@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Get a Free Website Audit | Vwebit",
   description:
     "Get a free website audit from Vwebit. We'll review your website, SEO, Google Business Profile, and lead generation and send you a personalised report.",
-  alternates: { canonical: "https://vwebit.com/website-audit" },
+  alternates: { canonical: "https://vwebit.xyz/website-audit" },
   openGraph: {
     title: "Get a Free Website Audit | Vwebit",
     description: "Discover exactly what's stopping your website from generating more leads.",
-    url: "https://vwebit.com/website-audit",
+    url: "https://vwebit.xyz/website-audit",
   },
 };
 

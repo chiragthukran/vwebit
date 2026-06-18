@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   title: "Get More Leads with a Professional Website | Vwebit",
   description:
     "Vwebit helps local businesses in India generate more inquiries through modern websites, local SEO, Google Business Profile optimization, and business automation. Starting from ₹15,000.",
-  alternates: { canonical: "https://vwebit.com" },
+  alternates: { canonical: "https://vwebit.xyz" },
   openGraph: {
     title: "Get More Leads with a Professional Website | Vwebit",
     description:
       "Professional websites, local SEO, and Google Business Profile optimization for Indian SMEs. Starting from ₹15,000.",
-    url: "https://vwebit.com",
+    url: "https://vwebit.xyz",
   },
 };
 

@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description:
     "Professional website development for transport and logistics companies in India. Get more freight enquiries with a fast, professional logistics website. Starting from ₹15,000.",
   keywords: ["website for transport company", "transport company website design India", "logistics website development India"],
-  alternates: { canonical: "https://vwebit.com/transport-company-website" },
+  alternates: { canonical: "https://vwebit.xyz/transport-company-website" },
   openGraph: {
     title: "Website for Transport Company in India | Vwebit",
     description: "Get more freight enquiries with a professional transport company website.",
-    url: "https://vwebit.com/transport-company-website",
+    url: "https://vwebit.xyz/transport-company-website",
   },
 };
 

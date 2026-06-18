@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description:
     "Business automation services for Indian small businesses. Automate WhatsApp follow-ups, lead notifications, appointment reminders, and more. Save time and grow faster.",
   keywords: ["business automation for small business", "WhatsApp automation India", "business automation India"],
-  alternates: { canonical: "https://vwebit.com/business-automation" },
+  alternates: { canonical: "https://vwebit.xyz/business-automation" },
   openGraph: {
     title: "Business Automation for Small Business India | Vwebit",
     description: "Automate repetitive tasks and follow-ups so you focus on running your business.",
-    url: "https://vwebit.com/business-automation",
+    url: "https://vwebit.xyz/business-automation",
   },
 };
 

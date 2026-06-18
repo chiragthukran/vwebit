@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://vwebit.com/sitemap.xml",
+    sitemap: "https://vwebit.xyz/sitemap.xml",
   };
 }

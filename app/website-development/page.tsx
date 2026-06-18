@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description:
     "Professional website development for small businesses in India. Fast, mobile-first, SEO-optimised websites starting from ₹15,000. Serving businesses across India.",
   keywords: ["website development for small business India", "small business website design India", "affordable website development India"],
-  alternates: { canonical: "https://vwebit.com/website-development" },
+  alternates: { canonical: "https://vwebit.xyz/website-development" },
   openGraph: {
     title: "Website Development for Small Business India | Vwebit",
     description: "Fast, mobile-first, SEO-optimised websites for Indian SMEs. Starting from ₹15,000.",
-    url: "https://vwebit.com/website-development",
+    url: "https://vwebit.xyz/website-development",
   },
 };
 

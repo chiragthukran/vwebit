@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   title: "Portfolio — Concept Projects | Vwebit",
   description:
     "Concept projects demonstrating solutions we can build for businesses — packers & movers, transport, and clinic websites built for lead generation and local SEO.",
-  alternates: { canonical: "https://vwebit.com/portfolio" },
+  alternates: { canonical: "https://vwebit.xyz/portfolio" },
   openGraph: {
     title: "Portfolio — Concept Projects | Vwebit",
     description: "Concept projects demonstrating solutions we can build for businesses.",
-    url: "https://vwebit.com/portfolio",
+    url: "https://vwebit.xyz/portfolio",
   },
 };
 

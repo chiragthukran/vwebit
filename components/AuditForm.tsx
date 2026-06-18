@@ -12,6 +12,7 @@ const schema = z.object({
   websiteUrl: z.string().optional(),
   businessType: z.string().optional(),
   message: z.string().optional(),
+  botField: z.string().optional(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -78,6 +79,9 @@ export function AuditForm() {
         Get Your Free Website Audit
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
+        <div aria-hidden="true" className="hidden">
+          <input type="text" tabIndex={-1} autoComplete="off" {...register("botField")} />
+        </div>
         <div>
           <label htmlFor="audit-name" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
             Your Name <span className="text-[var(--color-error)]">*</span>
@@ -165,6 +169,7 @@ export function AuditForm() {
         <button
           type="submit"
           id="audit-form-submit"
+          data-tracking="audit_request"
           disabled={loading}
           className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
         >

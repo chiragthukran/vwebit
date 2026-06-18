@@ -10,6 +10,10 @@ const services = [
 
 const quickLinks = [
   { label: "Industries", href: "/industries" },
+  { label: "Packers & Movers Sites", href: "/packers-movers-website-development" },
+  { label: "Transport Websites", href: "/transport-company-website" },
+  { label: "Contractor Websites", href: "/contractor-website-development" },
+  { label: "Clinic Websites", href: "/clinic-website-design" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },

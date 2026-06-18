@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Contact Vwebit — Get in Touch | Vwebit",
   description:
     "Contact Vwebit for website development, local SEO, and Google Business Profile services. Based in Jalandhar, Punjab. Call or WhatsApp +91 85710 17947.",
-  alternates: { canonical: "https://vwebit.com/contact" },
+  alternates: { canonical: "https://vwebit.xyz/contact" },
   openGraph: {
     title: "Contact Vwebit | Website & SEO for Indian SMEs",
     description: "Reach us on WhatsApp or through our contact form. Based in Jalandhar, serving all India.",
-    url: "https://vwebit.com/contact",
+    url: "https://vwebit.xyz/contact",
   },
 };
 

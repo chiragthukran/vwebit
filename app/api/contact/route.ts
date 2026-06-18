@@ -6,7 +6,12 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, phone, businessType, message } = body;
+    const { name, phone, businessType, message, botField } = body;
+
+    // Honeypot check for spam
+    if (botField) {
+      return NextResponse.json({ success: true }, { status: 200 });
+    }
 
     if (!name || !phone) {
       return NextResponse.json(
@@ -29,7 +34,7 @@ export async function POST(req: NextRequest) {
           <tr><td><strong>Business Type:</strong></td><td>${businessType || "Not specified"}</td></tr>
           <tr><td><strong>Message:</strong></td><td>${message || "—"}</td></tr>
         </table>
-        <p style="margin-top:16px;color:#666">Sent via vwebit.com contact form</p>
+        <p style="margin-top:16px;color:#666">Sent via vwebit.xyz contact form</p>
       `,
     });
 

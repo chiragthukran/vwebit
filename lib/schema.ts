@@ -1,4 +1,4 @@
-const BASE_URL = "https://vwebit.com";
+const BASE_URL = "https://vwebit.xyz";
 
 export const organizationSchema = {
   "@context": "https://schema.org",

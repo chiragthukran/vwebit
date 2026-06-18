@@ -11,6 +11,7 @@ const schema = z.object({
   phone: z.string().min(10, "Enter a valid phone number"),
   businessType: z.string().optional(),
   message: z.string().min(5, "Please enter a message"),
+  botField: z.string().optional(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -58,6 +59,9 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+      <div aria-hidden="true" className="hidden">
+        <input type="text" tabIndex={-1} autoComplete="off" {...register("botField")} />
+      </div>
       <div>
         <label htmlFor="contact-name" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
           Your Name <span className="text-[var(--color-error)]">*</span>
@@ -103,7 +107,7 @@ export function ContactForm() {
         </div>
       )}
 
-      <button type="submit" id="contact-form-submit" disabled={loading} className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
+      <button type="submit" id="contact-form-submit" data-tracking="contact_submit" disabled={loading} className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
         {loading ? "Sending..." : "Send Message"}
         {!loading && <ArrowRight className="w-4 h-4" aria-hidden="true" />}
       </button>
