@@ -67,7 +67,7 @@ export function AuditForm() {
           Request Received!
         </h3>
         <p className="text-[var(--color-on-surface-variant)] text-sm">
-          We'll review your details and send your free website audit within 24 hours. You can also reach us directly on WhatsApp.
+          We'll review your details and contact you for your free consultation within 24 hours. You can also reach us directly on WhatsApp.
         </p>
       </div>
     );
@@ -76,7 +76,7 @@ export function AuditForm() {
   return (
     <div>
       <h2 className="font-[var(--font-geist)] text-lg font-bold text-[var(--color-on-surface)] mb-6">
-        Get Your Free Website Audit
+        Book Free Consultation
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
         <div aria-hidden="true" className="hidden">
@@ -173,7 +173,7 @@ export function AuditForm() {
           disabled={loading}
           className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          {loading ? "Sending..." : "Get My Free Website Audit"}
+          {loading ? "Sending..." : "Book Free Consultation"}
           {!loading && <ArrowRight className="w-4 h-4" aria-hidden="true" />}
         </button>
 
@@ -185,7 +185,7 @@ export function AuditForm() {
       {/* Promise bullets */}
       <div className="mt-8 pt-6 border-t border-[var(--color-outline-variant)]">
         <p className="text-xs font-semibold uppercase tracking-wider text-[var(--color-on-surface-variant)] mb-4">
-          Your audit will cover:
+          Your consultation will cover:
         </p>
         <div className="space-y-3">
           {promises.map(({ icon: Icon, label, desc }) => (
