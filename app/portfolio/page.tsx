@@ -72,12 +72,12 @@ export default function PortfolioPage() {
       </div>
 
       <section className="bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
-        <div className="max-w-[1280px] mx-auto max-w-3xl">
+        <div className="max-w-[1280px] mx-auto max-w-[768px]">
           <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-3">Portfolio</p>
           <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
             Concept Projects
           </h1>
-          <p className="text-lg text-[var(--color-on-surface-variant)] max-w-2xl leading-relaxed">
+          <p className="text-lg text-[var(--color-on-surface-variant)] max-w-[672px] leading-relaxed">
             Concept projects demonstrating solutions we can build for businesses. These demonstrate the quality, functionality, and design approach we bring to every project.
           </p>
         </div>
@@ -146,7 +146,7 @@ export default function PortfolioPage() {
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">
             Want a Website Like This for Your Business?
           </h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-lg mx-auto">
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 max-w-[512px] mx-auto">
             Get a free consultation and we'll show you exactly how we can build something similar — tailored to your industry and goals.
           </p>
           <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">

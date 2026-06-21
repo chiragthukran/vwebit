@@ -27,7 +27,7 @@ export function SectionHeader({
       </h2>
       {subtitle && (
         <p className={cn(
-          "mt-4 text-lg text-[var(--color-on-surface-variant)] w-full max-w-2xl leading-relaxed",
+          "mt-4 text-lg text-[var(--color-on-surface-variant)] max-w-[672px] leading-relaxed",
           centered && "mx-auto"
         )}>
           {subtitle}

@@ -137,7 +137,7 @@ export function Navbar() {
             data-tracking="consultation_request"
             className="inline-flex items-center justify-center px-5 py-2.5 bg-[var(--color-primary)] text-white text-sm font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2"
           >
-            Get Free Free Consultation
+            Get free Consultation
           </Link>
         </div>
 
@@ -197,7 +197,7 @@ export function Navbar() {
                 href="/free-consultation"
                 className="block w-full text-center px-5 py-3 bg-[var(--color-primary)] text-white text-sm font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors"
               >
-                Get Free Free Consultation
+                Get free Consultation
               </Link>
             </div>
           </div>

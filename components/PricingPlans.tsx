@@ -144,7 +144,7 @@ export function PricingPlans() {
           </p>
           <Button asChild variant="primary" size="lg">
             <Link href="/free-consultation" className="inline-flex items-center gap-2">
-              Get Free Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              Get free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </Button>
         </div>

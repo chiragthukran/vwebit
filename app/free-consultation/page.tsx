@@ -4,12 +4,12 @@ import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
 import { webPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Get a Free Free Consultation | Vwebit",
+  title: "Get a free Consultation | Vwebit",
   description:
     "Get a free consultation from Vwebit. We'll review your website, SEO, Google Business Profile, and lead generation and send you a personalised report.",
   alternates: { canonical: "https://www.vwebit.xyz/free-consultation" },
   openGraph: {
-    title: "Get a Free Free Consultation | Vwebit",
+    title: "Get a free Consultation | Vwebit",
     description: "Discover exactly what's stopping your website from generating more leads.",
     url: "https://www.vwebit.xyz/free-consultation",
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function WebsiteConsultationPage() {
   const jsonLd = webPageSchema(
-    "Get a Free Free Consultation | Vwebit",
+    "Get a free Consultation | Vwebit",
     "Get a personalised free consultation covering website speed, SEO, Google Business Profile, and lead generation.",
     "/free-consultation",
     "ContactPage"

@@ -47,7 +47,7 @@ export default function ContactPage() {
               <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
                 Get in Touch
               </h1>
-              <p className="text-lg text-[var(--color-on-surface-variant)] mb-10 leading-relaxed max-w-lg">
+              <p className="text-lg text-[var(--color-on-surface-variant)] mb-10 leading-relaxed max-w-[512px]">
                 Have a question or ready to start your project? Send us a message or reach us directly on WhatsApp for a faster response.
               </p>
 
