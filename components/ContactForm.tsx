@@ -4,14 +4,25 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
 
 const schema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   phone: z.string().min(10, "Enter a valid phone number"),
-  businessType: z.string().optional(),
+  plan: z.string().optional(),
+  businessType: z.string().min(1, "Please select a business type"),
+  otherBusiness: z.string().optional(),
+  timeline: z.string().optional(),
   message: z.string().min(5, "Please enter a message"),
   botField: z.string().optional(),
+}).superRefine((data, ctx) => {
+  if (data.businessType === "other" && (!data.otherBusiness || data.otherBusiness.length < 2)) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "Please specify your business type",
+      path: ["otherBusiness"],
+    });
+  }
 });
 
 type FormData = z.infer<typeof schema>;
@@ -21,7 +32,17 @@ export function ContactForm() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({ resolver: zodResolver(schema) });
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: zodResolver(schema),
+    mode: "onTouched", // Validates live when user leaves the field
+  });
+
+  const businessType = watch("businessType");
 
   const onSubmit = async (data: FormData) => {
     setLoading(true);
@@ -62,6 +83,8 @@ export function ContactForm() {
       <div aria-hidden="true" className="hidden">
         <input type="text" tabIndex={-1} autoComplete="off" {...register("botField")} />
       </div>
+      
+      {/* Name */}
       <div>
         <label htmlFor="contact-name" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
           Your Name <span className="text-[var(--color-error)]">*</span>
@@ -70,6 +93,7 @@ export function ContactForm() {
         {errors.name && <p className="mt-1 text-xs text-[var(--color-error)]">{errors.name.message}</p>}
       </div>
 
+      {/* Phone */}
       <div>
         <label htmlFor="contact-phone" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
           Phone Number <span className="text-[var(--color-error)]">*</span>
@@ -78,26 +102,78 @@ export function ContactForm() {
         {errors.phone && <p className="mt-1 text-xs text-[var(--color-error)]">{errors.phone.message}</p>}
       </div>
 
+      {/* Pricing Plan */}
       <div>
-        <label htmlFor="contact-business-type" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
-          Business Type
+        <label htmlFor="contact-plan" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
+          Interested In
         </label>
-        <select id="contact-business-type" {...register("businessType")} className="w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition">
-          <option value="">Select your business type</option>
-          <option value="packers-movers">Packers & Movers</option>
-          <option value="transport">Transport / Logistics</option>
-          <option value="clinic">Clinic / Healthcare</option>
-          <option value="contractor">Contractor / Builder</option>
-          <option value="retail">Retail / Shop</option>
-          <option value="other">Other</option>
-        </select>
+        <div className="relative">
+          <select id="contact-plan" {...register("plan")} className="appearance-none w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition pr-10">
+            <option value="">Select a plan or service</option>
+            <option value="Starter Plan (₹7,999)">Starter Plan (₹7,999)</option>
+            <option value="Custom Quote">Custom Quote</option>
+            <option value="Growth+ Plan (₹24,999)">Growth+ Plan (₹24,999)</option>
+            <option value="Website Audit">Website Audit</option>
+            <option value="Not Sure Yet">Not Sure Yet</option>
+          </select>
+          <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-on-surface-variant)] pointer-events-none" aria-hidden="true" />
+        </div>
       </div>
 
+      {/* Business Type */}
+      <div>
+        <label htmlFor="contact-business-type" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
+          Business Type <span className="text-[var(--color-error)]">*</span>
+        </label>
+        <div className="relative">
+          <select id="contact-business-type" {...register("businessType")} className="appearance-none w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition pr-10">
+            <option value="">Select your business type</option>
+            <option value="Packers & Movers">Packers & Movers</option>
+            <option value="Transport / Logistics">Transport / Logistics</option>
+            <option value="Clinic / Healthcare">Clinic / Healthcare</option>
+            <option value="Contractor / Builder">Contractor / Builder</option>
+            <option value="Retail / Shop">Retail / Shop</option>
+            <option value="other">Other</option>
+          </select>
+          <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-on-surface-variant)] pointer-events-none" aria-hidden="true" />
+        </div>
+        {errors.businessType && <p className="mt-1 text-xs text-[var(--color-error)]">{errors.businessType.message}</p>}
+      </div>
+
+      {/* Other Business Type (Conditional) */}
+      {businessType === "other" && (
+        <div className="animate-fade-in-up">
+          <label htmlFor="contact-other-business" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
+            Please Specify <span className="text-[var(--color-error)]">*</span>
+          </label>
+          <input id="contact-other-business" type="text" placeholder="E.g. Real Estate, Restaurant..." {...register("otherBusiness")} className="w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm placeholder:text-[var(--color-outline)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition" />
+          {errors.otherBusiness && <p className="mt-1 text-xs text-[var(--color-error)]">{errors.otherBusiness.message}</p>}
+        </div>
+      )}
+
+      {/* Timeline */}
+      <div>
+        <label htmlFor="contact-timeline" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
+          Project Timeline
+        </label>
+        <div className="relative">
+          <select id="contact-timeline" {...register("timeline")} className="appearance-none w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition pr-10">
+            <option value="">Select an expected timeline</option>
+            <option value="ASAP">ASAP</option>
+            <option value="1-2 Weeks">1-2 Weeks</option>
+            <option value="1 Month">1 Month</option>
+            <option value="More than a month">More than a month</option>
+          </select>
+          <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-on-surface-variant)] pointer-events-none" aria-hidden="true" />
+        </div>
+      </div>
+
+      {/* Message */}
       <div>
         <label htmlFor="contact-message" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
           Message <span className="text-[var(--color-error)]">*</span>
         </label>
-        <textarea id="contact-message" rows={4} placeholder="Tell us about your business and what you need..." {...register("message")} className="w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm placeholder:text-[var(--color-outline)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition resize-none" />
+        <textarea id="contact-message" rows={4} placeholder="Tell us about your project requirements..." {...register("message")} className="w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm placeholder:text-[var(--color-outline)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition resize-none" />
         {errors.message && <p className="mt-1 text-xs text-[var(--color-error)]">{errors.message.message}</p>}
       </div>
 
@@ -108,7 +184,7 @@ export function ContactForm() {
       )}
 
       <button type="submit" id="contact-form-submit" data-tracking="contact_submit" disabled={loading} className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
-        {loading ? "Sending..." : "Send Message"}
+        {loading ? "Sending..." : "Submit Request"}
         {!loading && <ArrowRight className="w-4 h-4" aria-hidden="true" />}
       </button>
     </form>
