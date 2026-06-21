@@ -132,12 +132,12 @@ export function Navbar() {
         {/* CTA */}
         <div className="hidden lg:block">
           <Link
-            href="/website-audit"
-            id="nav-audit-cta"
-            data-tracking="audit_request"
+            href="/free-consultation"
+            id="nav-consultation-cta"
+            data-tracking="consultation_request"
             className="inline-flex items-center justify-center px-5 py-2.5 bg-[var(--color-primary)] text-white text-sm font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2"
           >
-            Get Free Website Audit
+            Get Free Free Consultation
           </Link>
         </div>
 
@@ -194,10 +194,10 @@ export function Navbar() {
             ))}
             <div className="pt-3">
               <Link
-                href="/website-audit"
+                href="/free-consultation"
                 className="block w-full text-center px-5 py-3 bg-[var(--color-primary)] text-white text-sm font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors"
               >
-                Get Free Website Audit
+                Get Free Free Consultation
               </Link>
             </div>
           </div>

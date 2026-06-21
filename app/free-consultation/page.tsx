@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
-import { AuditForm } from "@/components/AuditForm";
+import { ConsultationForm } from "@/components/ConsultationForm";
 import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
 import { webPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Get a Free Website Audit | Vwebit",
+  title: "Get a Free Free Consultation | Vwebit",
   description:
-    "Get a free website audit from Vwebit. We'll review your website, SEO, Google Business Profile, and lead generation and send you a personalised report.",
-  alternates: { canonical: "https://www.vwebit.xyz/website-audit" },
+    "Get a free consultation from Vwebit. We'll review your website, SEO, Google Business Profile, and lead generation and send you a personalised report.",
+  alternates: { canonical: "https://www.vwebit.xyz/free-consultation" },
   openGraph: {
-    title: "Get a Free Website Audit | Vwebit",
+    title: "Get a Free Free Consultation | Vwebit",
     description: "Discover exactly what's stopping your website from generating more leads.",
-    url: "https://www.vwebit.xyz/website-audit",
+    url: "https://www.vwebit.xyz/free-consultation",
   },
 };
 
-export default function WebsiteAuditPage() {
+export default function WebsiteConsultationPage() {
   const jsonLd = webPageSchema(
-    "Get a Free Website Audit | Vwebit",
-    "Get a personalised free website audit covering website speed, SEO, Google Business Profile, and lead generation.",
-    "/website-audit",
+    "Get a Free Free Consultation | Vwebit",
+    "Get a personalised free consultation covering website speed, SEO, Google Business Profile, and lead generation.",
+    "/free-consultation",
     "ContactPage"
   );
 
@@ -29,7 +29,7 @@ export default function WebsiteAuditPage() {
 
       <div className="bg-[var(--color-surface-container-lowest)]">
         <div className="max-w-[1280px] mx-auto px-6 md:px-12">
-          <BreadcrumbNav items={[{ label: "Website Audit" }]} />
+          <BreadcrumbNav items={[{ label: "Free Consultation" }]} />
         </div>
       </div>
 
@@ -42,10 +42,10 @@ export default function WebsiteAuditPage() {
                 Free. No obligation.
               </p>
               <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
-                Get Your Free<br />Website Audit
+                Get Your Free<br />Free Consultation
               </h1>
               <p className="text-lg text-[var(--color-on-surface-variant)] mb-8 leading-relaxed max-w-lg">
-                Fill in the form and we'll send you a personalised audit of your website,
+                Fill in the form and we'll send you a personalised consultation of your website,
                 SEO, and online presence — along with specific recommendations to get more
                 leads.
               </p>
@@ -82,7 +82,7 @@ export default function WebsiteAuditPage() {
 
             {/* Right — Form */}
             <div className="bg-white border border-[var(--color-outline-variant)] rounded-2xl p-8 shadow-sm">
-              <AuditForm />
+              <ConsultationForm />
             </div>
           </div>
         </div>

@@ -113,7 +113,7 @@ export function ContactForm() {
             <option value="Starter Plan (₹7,999)">Starter Plan (₹7,999)</option>
             <option value="Custom Quote">Custom Quote</option>
             <option value="Growth+ Plan (₹24,999)">Growth+ Plan (₹24,999)</option>
-            <option value="Website Audit">Website Audit</option>
+            <option value="Free Consultation">Free Consultation</option>
             <option value="Not Sure Yet">Not Sure Yet</option>
           </select>
           <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-on-surface-variant)] pointer-events-none" aria-hidden="true" />

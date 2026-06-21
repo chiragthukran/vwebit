@@ -47,9 +47,10 @@ export default function ContractorPage() {
         </div>
       </div>
 
-      <section className="bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
+      <section className="relative overflow-hidden bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
         <div className="max-w-[1280px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-3">For Contractors & Builders</p>
             <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
               Website for Contractors and Builders in India
@@ -58,16 +59,21 @@ export default function ContractorPage() {
               A portfolio-driven website that showcases your projects, builds trust with potential clients, and generates more local enquiries and site visit requests.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/website-audit" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
-                Get Free Audit <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              <Link href="/free-consultation" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
+                Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
               <a href="https://wa.me/918571017947?text=Hi%2C%20I%20need%20a%20website%20for%20my%20contractor%20business." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 border border-[var(--color-primary)] text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-surface-container-low)] transition-colors">
                 WhatsApp Us
               </a>
             </div>
           </div>
+            <div className="relative animate-fade-in-up hidden lg:block" style={{ animationDelay: "0.2s" }}>
+              <div className="absolute -inset-4 bg-gradient-to-r from-[var(--color-primary-fixed)] to-blue-200 opacity-30 blur-2xl rounded-full"></div>
+              <img src="/images/contractor-hero.png" alt="Hero Illustration" className="relative w-full max-w-[500px] h-auto object-contain mx-auto drop-shadow-sm transition-transform hover:scale-105" />
+            </div>
+          </div>
         </div>
-      </section>
+</section>
 
       <section className="py-20 px-6 md:px-12">
         <div className="max-w-[1280px] mx-auto">
@@ -96,9 +102,9 @@ export default function ContractorPage() {
       <section className="py-16 px-6 md:px-12 bg-[var(--color-primary)]">
         <div className="max-w-[1280px] mx-auto text-center">
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">Ready to Showcase Your Work?</h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 max-w-lg mx-auto">Get a free audit and see how a professional website can grow your contracting business.</p>
-          <Link href="/website-audit" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
-            Get My Free Audit <ArrowRight className="w-4 h-4" aria-hidden="true" />
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-lg mx-auto">Get a free consultation and see how a professional website can grow your contracting business.</p>
+          <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
+            Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>
         </div>
       </section>

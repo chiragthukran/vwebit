@@ -140,11 +140,11 @@ export function PricingPlans() {
             Not Sure Which Plan Fits Your Business?
           </h3>
           <p className="text-[var(--color-on-surface-variant)] mb-8">
-            Get a free consultation and website audit. We'll recommend the best solution based on your goals and budget.
+            Get a free consultation and free consultation. We'll recommend the best solution based on your goals and budget.
           </p>
           <Button asChild variant="primary" size="lg">
-            <Link href="/website-audit" className="inline-flex items-center gap-2">
-              Get Free Website Audit <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            <Link href="/free-consultation" className="inline-flex items-center gap-2">
+              Get Free Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </Button>
         </div>

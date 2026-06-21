@@ -63,8 +63,12 @@ export default function WebsiteDevelopmentPage() {
       </div>
 
       {/* Hero */}
-      <section className="bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
-        <div className="max-w-[1280px] mx-auto max-w-3xl">
+      <section className="relative overflow-hidden bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
+        
+        <div className="max-w-[1280px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-2xl">
+
           <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-3">Website Development</p>
           <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
             Website Development for<br />Small Business in India
@@ -73,15 +77,22 @@ export default function WebsiteDevelopmentPage() {
             We build fast, mobile-first, SEO-optimised websites that help small businesses across India get more calls, enquiries, and customers. Starting from ₹15,000.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/website-audit" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
-              Get Free Website Audit <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            <Link href="/free-consultation" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
+              Get Free Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
             <a href="https://wa.me/918571017947?text=Hi%2C%20I%27m%20interested%20in%20website%20development." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 border border-[var(--color-primary)] text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-surface-container-low)] transition-colors">
               WhatsApp Us
             </a>
           </div>
+        
+            </div>
+            <div className="relative animate-fade-in-up hidden lg:block" style={{ animationDelay: "0.2s" }}>
+              <div className="absolute -inset-4 bg-gradient-to-r from-[var(--color-primary-fixed)] to-blue-200 opacity-30 blur-2xl rounded-full"></div>
+              <img src="/images/web-dev-hero.png" alt="Hero Illustration" className="relative w-full max-w-[500px] h-auto object-contain mx-auto drop-shadow-sm transition-transform hover:scale-105" />
+            </div>
+          </div>
         </div>
-      </section>
+</section>
 
       {/* Features */}
       <section className="py-20 px-6 md:px-12" aria-labelledby="features-heading">
@@ -152,9 +163,9 @@ export default function WebsiteDevelopmentPage() {
       <section className="py-16 px-6 md:px-12 bg-[var(--color-primary)]">
         <div className="max-w-[1280px] mx-auto text-center">
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">Ready to Build Your Website?</h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 max-w-xl mx-auto">Get a free website audit first — we'll show you exactly what your site needs to rank and convert.</p>
-          <Link href="/website-audit" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
-            Get My Free Audit <ArrowRight className="w-4 h-4" aria-hidden="true" />
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-xl mx-auto">Get a free consultation first — we'll show you exactly what your site needs to rank and convert.</p>
+          <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
+            Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>
         </div>
       </section>

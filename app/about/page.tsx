@@ -122,14 +122,24 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Developer Portfolio */}
+      <section className="py-20 px-6 md:px-12 bg-white">
+        <div className="max-w-[1280px] mx-auto">
+          <SectionHeader eyebrow="Meet the Developer" title="Chirag Thukran" subtitle="The founder and lead developer behind Vwebit. Check out my personal portfolio below to see my open-source projects, technical writing, and background." centered className="mb-12" />
+          <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-[var(--color-outline-variant)] bg-[var(--color-surface-container-lowest)] h-[800px] relative">
+            <iframe src="https://chiragthukran.dev" className="absolute inset-0 w-full h-full border-0" title="Chirag Thukran Portfolio" />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 px-6 md:px-12 bg-[var(--color-primary)]">
         <div className="max-w-[1280px] mx-auto text-center">
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">Ready to Work Together?</h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 max-w-lg mx-auto">Start with a free website audit. No obligation, no sales pressure.</p>
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-lg mx-auto">Start with a free consultation. No obligation, no sales pressure.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/website-audit" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
-              Get Free Audit <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
+              Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
             <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
               Contact Us

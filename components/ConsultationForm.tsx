@@ -24,7 +24,7 @@ const promises = [
   { icon: Users, label: "Lead Generation Improvements", desc: "What's stopping visitors from contacting you." },
 ];
 
-export function AuditForm() {
+export function ConsultationForm() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -39,7 +39,7 @@ export function AuditForm() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("/api/audit-request", {
+      const res = await fetch("/api/consultation-request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -83,11 +83,11 @@ export function AuditForm() {
           <input type="text" tabIndex={-1} autoComplete="off" {...register("botField")} />
         </div>
         <div>
-          <label htmlFor="audit-name" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
+          <label htmlFor="consultation-name" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
             Your Name <span className="text-[var(--color-error)]">*</span>
           </label>
           <input
-            id="audit-name"
+            id="consultation-name"
             type="text"
             autoComplete="name"
             placeholder="Rajesh Kumar"
@@ -98,11 +98,11 @@ export function AuditForm() {
         </div>
 
         <div>
-          <label htmlFor="audit-phone" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
+          <label htmlFor="consultation-phone" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
             Phone Number <span className="text-[var(--color-error)]">*</span>
           </label>
           <input
-            id="audit-phone"
+            id="consultation-phone"
             type="tel"
             autoComplete="tel"
             placeholder="+91 98765 43210"
@@ -113,11 +113,11 @@ export function AuditForm() {
         </div>
 
         <div>
-          <label htmlFor="audit-url" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
+          <label htmlFor="consultation-url" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
             Your Website URL <span className="text-xs font-normal text-[var(--color-on-surface-variant)]">(optional)</span>
           </label>
           <input
-            id="audit-url"
+            id="consultation-url"
             type="url"
             autoComplete="url"
             placeholder="https://yourbusiness.com"
@@ -127,11 +127,11 @@ export function AuditForm() {
         </div>
 
         <div>
-          <label htmlFor="audit-business-type" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
+          <label htmlFor="consultation-business-type" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
             Business Type
           </label>
           <select
-            id="audit-business-type"
+            id="consultation-business-type"
             {...register("businessType")}
             className="w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition"
           >
@@ -148,11 +148,11 @@ export function AuditForm() {
         </div>
 
         <div>
-          <label htmlFor="audit-message" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
+          <label htmlFor="consultation-message" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
             Message <span className="text-xs font-normal text-[var(--color-on-surface-variant)]">(optional)</span>
           </label>
           <textarea
-            id="audit-message"
+            id="consultation-message"
             rows={3}
             placeholder="Tell us about your business goals..."
             {...register("message")}
@@ -168,8 +168,8 @@ export function AuditForm() {
 
         <button
           type="submit"
-          id="audit-form-submit"
-          data-tracking="audit_request"
+          id="consultation-form-submit"
+          data-tracking="consultation_request"
           disabled={loading}
           className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
         >

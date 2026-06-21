@@ -7,7 +7,7 @@ const WA_URL =
 
 export function WhatsAppFloat() {
   return (
-    <div className="fixed bottom-6 right-6 z-50" aria-label="Chat on WhatsApp">
+    <div className="fixed bottom-6 left-6 z-50" aria-label="Chat on WhatsApp">
       <a
         href={WA_URL}
         target="_blank"

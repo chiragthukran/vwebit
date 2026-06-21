@@ -24,11 +24,11 @@ export async function POST(req: NextRequest) {
     const toEmail = process.env.AUDIT_EMAIL ?? "vwebit12@gmail.com";
 
     const { error } = await resend.emails.send({
-      from: "Vwebit Audit Form <onboarding@resend.dev>",
+      from: "Vwebit Consultation Form <onboarding@resend.dev>",
       to: toEmail,
-      subject: `New Website Audit Request from ${name}`,
+      subject: `New Free Consultation Request from ${name}`,
       html: `
-        <h2>New Website Audit Request</h2>
+        <h2>New Free Consultation Request</h2>
         <table cellpadding="8" style="border-collapse:collapse;width:100%">
           <tr><td><strong>Name:</strong></td><td>${name}</td></tr>
           <tr><td><strong>Phone:</strong></td><td>${phone}</td></tr>
@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
           <tr><td><strong>Business Type:</strong></td><td>${businessType || "Not specified"}</td></tr>
           <tr><td><strong>Message:</strong></td><td>${message || "—"}</td></tr>
         </table>
-        <p style="margin-top:16px;color:#666">Sent via vwebit.xyz website audit form</p>
+        <p style="margin-top:16px;color:#666">Sent via vwebit.xyz free consultation form</p>
       `,
     });
 
@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (err) {
-    console.error("Audit request error:", err);
+    console.error("Consultation request error:", err);
     return NextResponse.json(
       { error: "An unexpected error occurred." },
       { status: 500 }

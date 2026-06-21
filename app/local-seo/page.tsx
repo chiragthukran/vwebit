@@ -53,9 +53,10 @@ export default function LocalSeoPage() {
         </div>
       </div>
 
-      <section className="bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
+      <section className="relative overflow-hidden bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
         <div className="max-w-[1280px] mx-auto">
-          <div className="max-w-3xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-3">Local SEO Services</p>
             <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
               Local SEO Services in India —<br />More Customers, More Calls
@@ -64,8 +65,8 @@ export default function LocalSeoPage() {
               We help local businesses rank higher in Google search so customers in your city find you before they find your competition.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/website-audit" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
-                Get Free Audit <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              <Link href="/free-consultation" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
+                Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
               <a href="https://wa.me/918571017947?text=Hi%2C%20I%27m%20interested%20in%20local%20SEO." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 border border-[var(--color-primary)] text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-surface-container-low)] transition-colors">
                 <Phone className="w-4 h-4" aria-hidden="true" />
@@ -73,8 +74,13 @@ export default function LocalSeoPage() {
               </a>
             </div>
           </div>
+            <div className="relative animate-fade-in-up hidden lg:block" style={{ animationDelay: "0.2s" }}>
+              <div className="absolute -inset-4 bg-gradient-to-r from-[var(--color-primary-fixed)] to-blue-200 opacity-30 blur-2xl rounded-full"></div>
+              <img src="/images/local-seo-hero.png" alt="Hero Illustration" className="relative w-full max-w-[500px] h-auto object-contain mx-auto drop-shadow-sm transition-transform hover:scale-105" />
+            </div>
+          </div>
         </div>
-      </section>
+</section>
 
       <section className="py-20 px-6 md:px-12">
         <div className="max-w-[1280px] mx-auto">
@@ -103,9 +109,9 @@ export default function LocalSeoPage() {
       <section className="py-16 px-6 md:px-12 bg-[var(--color-primary)]">
         <div className="max-w-[1280px] mx-auto text-center">
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">Start Ranking Higher in Google</h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 max-w-lg mx-auto">Get a free audit of your current online presence and find out exactly where you're losing customers.</p>
-          <Link href="/website-audit" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
-            Get My Free Audit <ArrowRight className="w-4 h-4" aria-hidden="true" />
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-lg mx-auto">Get a free consultation of your current online presence and find out exactly where you're losing customers.</p>
+          <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
+            Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>
         </div>
       </section>

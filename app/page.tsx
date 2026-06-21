@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "Do you provide SEO with website development?",
     answer:
-      "Yes. Every website we build comes with on-page SEO optimisation, Google Search Console setup, and a site speed audit. SEO is built in from day one.",
+      "Yes. Every website we build comes with on-page SEO optimisation, Google Search Console setup, and a site speed consultation. SEO is built in from day one.",
   },
   {
     question: "Can you help with Google Business Profile?",
@@ -441,16 +441,16 @@ export default function HomePage() {
           <h2 id="cta-heading" className="font-[var(--font-geist)] text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
             Ready to Grow Your Business Online?
           </h2>
-          <p className="text-[var(--color-primary-fixed-dim)] text-lg mb-8 max-w-xl mx-auto">
-            Get a free website audit and discover exactly how to get more leads from your online presence.
+          <p className="text-[var(--color-primary-fixed-dim)] text-lg mb-8 w-full max-w-xl mx-auto">
+            Get a free consultation and discover exactly how to get more leads from your online presence.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/website-audit"
-              id="cta-banner-audit"
+              href="/free-consultation"
+              id="cta-banner-consultation"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors shadow-sm"
             >
-              Get My Free Audit
+              Get Free Consultation
               <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
             <a
