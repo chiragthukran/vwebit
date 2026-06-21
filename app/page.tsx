@@ -8,7 +8,7 @@ import {
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { PricingPlans } from "@/components/PricingPlans";
-import { AuditForm } from "@/components/AuditForm";
+import { FloatingContactWidget } from "@/components/FloatingContactWidget";
 import { faqSchema, webPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -160,17 +160,21 @@ export default function HomePage() {
       />
 
       {/* ── 1. HERO ─────────────────────────────────────────────── */}
-      <section className="relative border-b border-[var(--color-outline-variant)] overflow-hidden bg-[var(--color-surface-container-lowest)]">
-        {/* Background Image Layer */}
+      <section className="relative border-b border-[var(--color-outline-variant)] overflow-hidden bg-white">
+        {/* Custom Hero Background Layer */}
         <div 
-          className="absolute inset-0 z-0 opacity-40 mix-blend-multiply"
+          className="absolute inset-0 z-0 opacity-90"
           style={{
-            backgroundImage: "url('/images/hero-bg.png')",
+            backgroundImage: "url('/images/hero-custom.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         />
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent to-[var(--color-surface-container-lowest)]" />
+        
+        {/* Subtle gradients to ensure text readability */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-white/80 via-white/20 to-transparent lg:w-1/2" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent to-white/90" />
         
         <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-12 py-16 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
@@ -188,7 +192,7 @@ export default function HomePage() {
                 We help local businesses generate more inquiries and customers through modern
                 websites, local SEO, Google Business Profile optimization, and business automation.
               </p>
-              <div className="flex flex-wrap gap-4 mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+              <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
                 <a
                   href="https://wa.me/918571017947?text=Hi%2C%20I%27m%20interested%20in%20Vwebit%27s%20services."
                   target="_blank"
@@ -201,25 +205,6 @@ export default function HomePage() {
                   </svg>
                   Chat on WhatsApp
                 </a>
-              </div>
-
-              <div className="animate-fade-in-up relative" style={{ animationDelay: "0.3s" }}>
-                <div className="absolute -inset-4 bg-gradient-to-r from-[var(--color-primary-fixed)] to-blue-200 opacity-30 blur-2xl rounded-full"></div>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img 
-                  src="/images/hero-illustration.png" 
-                  alt="Web Development Dashboard Illustration" 
-                  className="relative w-full max-w-[450px] h-auto object-contain drop-shadow-sm transition-transform duration-500 hover:scale-105"
-                  loading="eager"
-                />
-              </div>
-            </div>
-
-            {/* Right Column: Floating Form */}
-            <div className="relative w-full max-w-[480px] mx-auto lg:ml-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <div className="absolute -inset-1.5 bg-gradient-to-br from-[var(--color-primary)] to-indigo-500 rounded-3xl blur-lg opacity-25"></div>
-              <div className="relative bg-white/95 backdrop-blur-xl border border-[var(--color-outline-variant)] shadow-2xl rounded-2xl p-6 md:p-8">
-                <AuditForm />
               </div>
             </div>
           </div>
@@ -479,6 +464,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <FloatingContactWidget />
     </>
   );
 }
