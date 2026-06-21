@@ -21,7 +21,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vwebit.xyz"),
+  metadataBase: new URL("https://www.vwebit.xyz"),
   title: {
     default: "Vwebit — Websites & SEO for Indian Small Businesses",
     template: "%s | Vwebit",
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     "website design Jalandhar",
     "small business website India",
   ],
-  authors: [{ name: "Vwebit", url: "https://vwebit.xyz" }],
+  authors: [{ name: "Vwebit", url: "https://www.vwebit.xyz" }],
   creator: "Vwebit",
   publisher: "Vwebit",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://vwebit.xyz",
+    url: "https://www.vwebit.xyz",
     siteName: "Vwebit",
     title: "Vwebit — Websites & SEO for Indian Small Businesses",
     description:
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://vwebit.xyz",
+    canonical: "https://www.vwebit.xyz",
   },
 };
 

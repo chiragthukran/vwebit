@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description:
     "Get a professional website for your packers and movers business in India. Generate more shifting enquiries with a fast, mobile-friendly site optimised for local search.",
   keywords: ["website for packers and movers", "packers movers website design India", "movers website development"],
-  alternates: { canonical: "https://vwebit.xyz/packers-movers-website-development" },
+  alternates: { canonical: "https://www.vwebit.xyz/packers-movers-website-development" },
   openGraph: {
     title: "Website for Packers and Movers in India | Vwebit",
     description: "Get more shifting enquiries with a professional packers & movers website. Starting from ₹15,000.",
-    url: "https://vwebit.xyz/packers-movers-website-development",
+    url: "https://www.vwebit.xyz/packers-movers-website-development",
   },
 };
 

@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description:
     "Professional clinic website design for doctors and healthcare providers in India. Get a patient-friendly website with appointment booking, doctor profiles, and local health search rankings.",
   keywords: ["clinic website design", "website for clinic", "doctor website design India", "medical clinic website India"],
-  alternates: { canonical: "https://vwebit.xyz/clinic-website-design" },
+  alternates: { canonical: "https://www.vwebit.xyz/clinic-website-design" },
   openGraph: {
     title: "Clinic Website Design India | Vwebit",
     description: "Patient-friendly clinic websites with appointment features and local health search rankings.",
-    url: "https://vwebit.xyz/clinic-website-design",
+    url: "https://www.vwebit.xyz/clinic-website-design",
   },
 };
 

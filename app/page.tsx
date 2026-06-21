@@ -7,18 +7,19 @@ import {
 } from "lucide-react";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { PricingPlans } from "@/components/PricingPlans";
 import { faqSchema, webPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Get More Leads with a Professional Website | Vwebit",
   description:
     "Vwebit helps local businesses in India generate more inquiries through modern websites, local SEO, Google Business Profile optimization, and business automation. Starting from ₹15,000.",
-  alternates: { canonical: "https://vwebit.xyz" },
+  alternates: { canonical: "https://www.vwebit.xyz" },
   openGraph: {
     title: "Get More Leads with a Professional Website | Vwebit",
     description:
       "Professional websites, local SEO, and Google Business Profile optimization for Indian SMEs. Starting from ₹15,000.",
-    url: "https://vwebit.xyz",
+    url: "https://www.vwebit.xyz",
   },
 };
 
@@ -249,6 +250,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <PricingPlans />
 
       {/* ── 4. WHY CHOOSE VWEBIT ─────────────────────────────────── */}
       <section className="bg-[var(--color-surface-container-low)] border-y border-[var(--color-outline-variant)] py-20 px-6 md:px-12" aria-labelledby="why-heading">

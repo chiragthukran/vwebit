@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, Globe, Smartphone, Zap, Search, BarChart3, Sh
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
+import { PricingPlans } from "@/components/PricingPlans";
 import { serviceSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -11,11 +12,11 @@ export const metadata: Metadata = {
   description:
     "Professional website development for small businesses in India. Fast, mobile-first, SEO-optimised websites starting from ₹15,000. Serving businesses across India.",
   keywords: ["website development for small business India", "small business website design India", "affordable website development India"],
-  alternates: { canonical: "https://vwebit.xyz/website-development" },
+  alternates: { canonical: "https://www.vwebit.xyz/website-development" },
   openGraph: {
     title: "Website Development for Small Business India | Vwebit",
     description: "Fast, mobile-first, SEO-optimised websites for Indian SMEs. Starting from ₹15,000.",
-    url: "https://vwebit.xyz/website-development",
+    url: "https://www.vwebit.xyz/website-development",
   },
 };
 
@@ -134,6 +135,8 @@ export default function WebsiteDevelopmentPage() {
           </div>
         </div>
       </section>
+
+      <PricingPlans />
 
       {/* FAQ */}
       <section className="bg-[var(--color-surface-container-low)] border-t border-[var(--color-outline-variant)] py-20 px-6 md:px-12">

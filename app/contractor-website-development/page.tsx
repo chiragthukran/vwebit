@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description:
     "Professional website for contractors and builders in India. Showcase your projects, get more local enquiries, and rank on Google for contractor-related searches.",
   keywords: ["website for contractors", "contractor website design India", "builder website development India"],
-  alternates: { canonical: "https://vwebit.xyz/contractor-website-development" },
+  alternates: { canonical: "https://www.vwebit.xyz/contractor-website-development" },
   openGraph: {
     title: "Website for Contractors and Builders in India | Vwebit",
     description: "Showcase your projects and get more local enquiries with a professional contractor website.",
-    url: "https://vwebit.xyz/contractor-website-development",
+    url: "https://www.vwebit.xyz/contractor-website-development",
   },
 };
 

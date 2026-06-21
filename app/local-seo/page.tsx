@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   description:
     "Local SEO services for small businesses across India. Rank higher in Google search, get more leads, and dominate your local market. Expert local SEO from Vwebit.",
   keywords: ["local SEO services India", "local SEO for small business India", "Google local ranking India"],
-  alternates: { canonical: "https://vwebit.xyz/local-seo" },
+  alternates: { canonical: "https://www.vwebit.xyz/local-seo" },
   openGraph: {
     title: "Local SEO Services India | Vwebit",
     description: "Rank higher in Google local search and get more customers. Expert local SEO for Indian SMEs.",
-    url: "https://vwebit.xyz/local-seo",
+    url: "https://www.vwebit.xyz/local-seo",
   },
 };
 

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "Industries We Serve — Website Development & SEO | Vwebit",
   description:
     "Vwebit builds specialised websites and SEO strategies for Indian businesses across key industries — packers & movers, transport, clinics, and contractors.",
-  alternates: { canonical: "https://vwebit.xyz/industries" },
+  alternates: { canonical: "https://www.vwebit.xyz/industries" },
   openGraph: {
     title: "Industries We Serve | Vwebit",
     description: "Specialised websites and SEO for packers & movers, transport companies, clinics, and contractors across India.",
-    url: "https://vwebit.xyz/industries",
+    url: "https://www.vwebit.xyz/industries",
   },
 };
 
@@ -58,7 +58,7 @@ export default function IndustriesPage() {
     industries.map((i) => ({
       name: i.label,
       description: i.description,
-      url: `https://vwebit.xyz${i.href}`,
+      url: `https://www.vwebit.xyz${i.href}`,
     }))
   );
   const pageJsonLd = webPageSchema(
