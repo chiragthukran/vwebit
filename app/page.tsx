@@ -8,7 +8,7 @@ import {
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { PricingPlans } from "@/components/PricingPlans";
-import { FloatingContactWidget } from "@/components/FloatingContactWidget";
+import { HeroVideo } from "@/components/HeroVideo";
 import { faqSchema, webPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -125,7 +125,7 @@ const industries = [
 ];
 
 const trustIndicators = [
-  { icon: Zap, label: "Fast Websites", sub: "95+ Lighthouse score" },
+  { icon: Zap, label: "Loads Fast", sub: "95+ Lighthouse score" },
   { icon: Search, label: "SEO Ready", sub: "Built-in from day one" },
   { icon: Smartphone, label: "Mobile First", sub: "Works on all devices" },
   { icon: HeadphonesIcon, label: "Ongoing Support", sub: "Post-launch help" },
@@ -161,21 +161,13 @@ export default function HomePage() {
 
       {/* ── 1. HERO ─────────────────────────────────────────────── */}
       <section className="relative border-b border-[var(--color-outline-variant)] overflow-hidden bg-white">
-        {/* Custom Hero Background Layer */}
-        <div 
-          className="absolute inset-0 z-0 opacity-90"
-          style={{
-            backgroundImage: "url('/images/hero-custom.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-        
+        {/* Ping-pong Looping Video Background */}
+        <HeroVideo />
+
         {/* Subtle gradients to ensure text readability */}
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-white/80 via-white/20 to-transparent lg:w-1/2" />
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent to-white/90" />
-        
+
         <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-12 py-16 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             {/* Left Column: Text & CTAs & Illustration */}
@@ -441,7 +433,7 @@ export default function HomePage() {
           <h2 id="cta-heading" className="font-[var(--font-geist)] text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
             Ready to Grow Your Business Online?
           </h2>
-          <p className="text-[var(--color-primary-fixed-dim)] text-lg mb-8 w-full max-w-xl mx-auto">
+          <p className="text-[var(--color-primary-fixed-dim)] text-lg mb-8 w-full max-w-[600px] mx-auto">
             Get a free consultation and discover exactly how to get more leads from your online presence.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -465,7 +457,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <FloatingContactWidget />
+
     </>
   );
 }

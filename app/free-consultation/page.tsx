@@ -4,12 +4,12 @@ import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
 import { webPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Get a Free Free Consultation | Vwebit",
+  title: "Get a Free Consultation | Vwebit",
   description:
     "Get a free consultation from Vwebit. We'll review your website, SEO, Google Business Profile, and lead generation and send you a personalised report.",
   alternates: { canonical: "https://www.vwebit.xyz/free-consultation" },
   openGraph: {
-    title: "Get a Free Free Consultation | Vwebit",
+    title: "Get a Free Consultation | Vwebit",
     description: "Discover exactly what's stopping your website from generating more leads.",
     url: "https://www.vwebit.xyz/free-consultation",
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function WebsiteConsultationPage() {
   const jsonLd = webPageSchema(
-    "Get a Free Free Consultation | Vwebit",
+    "Get a Free Consultation | Vwebit",
     "Get a personalised free consultation covering website speed, SEO, Google Business Profile, and lead generation.",
     "/free-consultation",
     "ContactPage"
@@ -42,9 +42,9 @@ export default function WebsiteConsultationPage() {
                 Free. No obligation.
               </p>
               <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
-                Get Your Free<br />Free Consultation
+                Get Your<br />Free Consultation
               </h1>
-              <p className="text-lg text-[var(--color-on-surface-variant)] mb-8 leading-relaxed max-w-lg">
+              <p className="text-lg text-[var(--color-on-surface-variant)] mb-8 leading-relaxed max-w-[500px]">
                 Fill in the form and we'll send you a personalised consultation of your website,
                 SEO, and online presence — along with specific recommendations to get more
                 leads.

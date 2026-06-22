@@ -108,7 +108,7 @@ export default function BusinessAutomationPage() {
       <section className="py-16 px-6 md:px-12 bg-[var(--color-primary)]">
         <div className="max-w-[1280px] mx-auto text-center">
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">Automate Your Business Today</h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-lg mx-auto">Get a free consultation and we'll identify exactly which parts of your business can be automated.</p>
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-[512px] mx-auto">Get a free consultation and we'll identify exactly which parts of your business can be automated.</p>
           <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
             Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>
