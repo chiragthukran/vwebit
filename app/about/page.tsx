@@ -44,12 +44,12 @@ export default function AboutPage() {
 
       {/* Hero */}
       <section className="bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
-        <div className="max-w-[1280px] mx-auto max-w-[768px]">
+        <div className="max-w-[1280px] mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-3">About Vwebit</p>
           <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
             We Help Indian Businesses<br />Win Online
           </h1>
-          <p className="text-lg text-[var(--color-on-surface-variant)] leading-relaxed max-w-[672px]">
+          <p className="text-lg text-[var(--color-on-surface-variant)] leading-relaxed max-w-2xl">
             Vwebit is a website development and digital marketing agency based in Jalandhar, Punjab. We work exclusively with small and medium-sized businesses across India, helping them get more customers through professional websites, local SEO, and Google Business Profile optimisation.
           </p>
         </div>
@@ -125,34 +125,9 @@ export default function AboutPage() {
       {/* Developer Portfolio */}
       <section className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-[1280px] mx-auto">
-          <SectionHeader eyebrow="Meet the Developer" title="Chirag Thukran" subtitle="The founder and lead developer behind Vwebit. Check out my personal portfolio to see my open-source projects, technical writing, and background." centered className="mb-12" />
-          
-          <div className="max-w-3xl mx-auto bg-[var(--color-surface-container-lowest)] border border-[var(--color-outline-variant)] rounded-2xl overflow-hidden shadow-sm flex flex-col md:flex-row items-center transition-shadow hover:shadow-md">
-            <div className="p-8 md:p-12 flex-1 text-center md:text-left">
-              <div className="w-20 h-20 bg-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto md:mx-0 mb-6 shadow-lg">
-                <span className="text-white font-bold text-2xl font-[var(--font-geist)]">CT</span>
-              </div>
-              <h3 className="text-2xl font-bold font-[var(--font-geist)] text-[var(--color-on-surface)] mb-2">Chirag Thukran</h3>
-              <p className="text-[var(--color-on-surface-variant)] mb-6">
-                Full-Stack Web Developer & Designer specialising in fast, SEO-optimised Next.js applications. Passionate about helping local Indian businesses succeed online.
-              </p>
-              <a 
-                href="https://chiragthukran.dev" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--color-surface-container-low)] text-[var(--color-on-surface)] border border-[var(--color-outline-variant)] font-semibold rounded-lg hover:bg-[var(--color-surface-variant)] transition-colors"
-              >
-                <Globe className="w-4 h-4" />
-                Visit Portfolio
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-            <div className="hidden md:flex w-1/3 bg-[var(--color-surface-container-low)] items-center justify-center p-8 border-l border-[var(--color-outline-variant)] self-stretch">
-              <div className="text-center">
-                <p className="font-bold text-4xl text-[var(--color-primary)] mb-2 font-[var(--font-geist)]">100%</p>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[var(--color-on-surface-variant)]">Hand-coded<br/>in India</p>
-              </div>
-            </div>
+          <SectionHeader eyebrow="Meet the Developer" title="Chirag Thukran" subtitle="The founder and lead developer behind Vwebit. Check out my personal portfolio below to see my open-source projects, technical writing, and background." centered className="mb-12" />
+          <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-[var(--color-outline-variant)] bg-[var(--color-surface-container-lowest)] h-[800px] relative">
+            <iframe src="https://chiragthukran.dev" className="absolute inset-0 w-full h-full border-0" title="Chirag Thukran Portfolio" />
           </div>
         </div>
       </section>
@@ -161,7 +136,7 @@ export default function AboutPage() {
       <section className="py-16 px-6 md:px-12 bg-[var(--color-primary)]">
         <div className="max-w-[1280px] mx-auto text-center">
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">Ready to Work Together?</h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 max-w-[512px] mx-auto">Start with a free consultation. No obligation, no sales pressure.</p>
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-[512px] mx-auto">Start with a free consultation. No obligation, no sales pressure.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
               Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />

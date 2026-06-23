@@ -56,12 +56,12 @@ export default function BusinessAutomationPage() {
       <section className="relative overflow-hidden bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
         <div className="max-w-[1280px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-[672px]">
+            <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-3">Business Automation</p>
             <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
               Business Automation for<br />Indian Small Businesses
             </h1>
-            <p className="text-lg text-[var(--color-on-surface-variant)] mb-8 leading-relaxed max-w-[672px]">
+            <p className="text-lg text-[var(--color-on-surface-variant)] mb-8 leading-relaxed max-w-2xl">
               Stop losing leads to slow follow-ups. We automate your WhatsApp messages, lead alerts, and customer communication so you can focus on running your business.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -73,9 +73,9 @@ export default function BusinessAutomationPage() {
               </a>
             </div>
           </div>
-            <div className="relative animate-fade-in-up mt-12 lg:mt-0 block" style={{ animationDelay: "0.2s" }}>
+            <div className="relative animate-fade-in-up hidden lg:block" style={{ animationDelay: "0.2s" }}>
               <div className="absolute -inset-4 bg-gradient-to-r from-[var(--color-primary-fixed)] to-blue-200 opacity-30 blur-2xl rounded-full"></div>
-              <img src="/images/automation-hero.png" alt="Hero Illustration" className="relative max-w-[500px] h-auto object-contain mx-auto drop-shadow-sm transition-transform hover:scale-105" />
+              <img src="/images/automation-hero.png" alt="Hero Illustration" className="relative w-full max-w-[500px] h-auto object-contain mx-auto drop-shadow-sm transition-transform hover:scale-105" />
             </div>
           </div>
         </div>
@@ -101,14 +101,14 @@ export default function BusinessAutomationPage() {
       <section className="bg-[var(--color-surface-container-low)] border-t border-[var(--color-outline-variant)] py-20 px-6 md:px-12">
         <div className="max-w-[1280px] mx-auto">
           <SectionHeader eyebrow="FAQ" title="Automation Questions" centered className="mb-10" />
-          <div className="max-w-[768px] mx-auto"><FAQAccordion items={faqs} /></div>
+          <div className="max-w-3xl mx-auto"><FAQAccordion items={faqs} /></div>
         </div>
       </section>
 
       <section className="py-16 px-6 md:px-12 bg-[var(--color-primary)]">
         <div className="max-w-[1280px] mx-auto text-center">
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">Automate Your Business Today</h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 max-w-[512px] mx-auto">Get a free consultation and we'll identify exactly which parts of your business can be automated.</p>
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-[512px] mx-auto">Get a free consultation and we'll identify exactly which parts of your business can be automated.</p>
           <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
             Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>

@@ -67,18 +67,18 @@ export default function WebsiteDevelopmentPage() {
         
         <div className="max-w-[1280px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-[672px]">
+            <div className="max-w-2xl">
 
           <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-3">Website Development</p>
           <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
             Website Development for<br />Small Business in India
           </h1>
-          <p className="text-lg text-[var(--color-on-surface-variant)] mb-8 leading-relaxed max-w-[672px]">
+          <p className="text-lg text-[var(--color-on-surface-variant)] mb-8 leading-relaxed max-w-2xl">
             We build fast, mobile-first, SEO-optimised websites that help small businesses across India get more calls, enquiries, and customers. Starting from ₹15,000.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/free-consultation" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
-              Get free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              Get Free Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
             <a href="https://wa.me/918571017947?text=Hi%2C%20I%27m%20interested%20in%20website%20development." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 border border-[var(--color-primary)] text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-surface-container-low)] transition-colors">
               WhatsApp Us
@@ -86,9 +86,9 @@ export default function WebsiteDevelopmentPage() {
           </div>
         
             </div>
-            <div className="relative animate-fade-in-up mt-12 lg:mt-0 block" style={{ animationDelay: "0.2s" }}>
+            <div className="relative animate-fade-in-up hidden lg:block" style={{ animationDelay: "0.2s" }}>
               <div className="absolute -inset-4 bg-gradient-to-r from-[var(--color-primary-fixed)] to-blue-200 opacity-30 blur-2xl rounded-full"></div>
-              <img src="/images/web-dev-hero.png" alt="Hero Illustration" className="relative max-w-[500px] h-auto object-contain mx-auto drop-shadow-sm transition-transform hover:scale-105" />
+              <img src="/images/web-dev-hero.png" alt="Hero Illustration" className="relative w-full max-w-[500px] h-auto object-contain mx-auto drop-shadow-sm transition-transform hover:scale-105" />
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function WebsiteDevelopmentPage() {
       <section className="bg-[var(--color-surface-container-low)] border-t border-[var(--color-outline-variant)] py-20 px-6 md:px-12">
         <div className="max-w-[1280px] mx-auto">
           <SectionHeader eyebrow="FAQ" title="Common Questions" centered className="mb-10" />
-          <div className="max-w-[768px] mx-auto">
+          <div className="max-w-3xl mx-auto">
             <FAQAccordion items={faqs} />
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function WebsiteDevelopmentPage() {
       <section className="py-16 px-6 md:px-12 bg-[var(--color-primary)]">
         <div className="max-w-[1280px] mx-auto text-center">
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">Ready to Build Your Website?</h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 max-w-[576px] mx-auto">Get a free consultation first — we'll show you exactly what your site needs to rank and convert.</p>
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-[576px] mx-auto">Get a free consultation first — we'll show you exactly what your site needs to rank and convert.</p>
           <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
             Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>

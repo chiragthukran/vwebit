@@ -79,12 +79,12 @@ export default function IndustriesPage() {
       </div>
 
       <section className="bg-[var(--color-surface-container-lowest)] border-b border-[var(--color-outline-variant)] py-16 md:py-24 px-6 md:px-12">
-        <div className="max-w-[1280px] mx-auto max-w-[768px]">
+        <div className="max-w-[1280px] mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-3">Industries</p>
           <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl font-bold text-[var(--color-on-surface)] tracking-tight mb-5">
             Built for Your Industry
           </h1>
-          <p className="text-lg text-[var(--color-on-surface-variant)] max-w-[672px] leading-relaxed">
+          <p className="text-lg text-[var(--color-on-surface-variant)] max-w-2xl leading-relaxed">
             We don't build generic websites. We build industry-specific solutions that understand your customers, your keywords, and your market.
           </p>
         </div>
@@ -130,7 +130,7 @@ export default function IndustriesPage() {
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">
             Don't See Your Industry?
           </h2>
-          <p className="text-[var(--color-primary-fixed-dim)] mb-8 max-w-[512px] mx-auto">
+          <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-[512px] mx-auto">
             We work with businesses across all industries. Get in touch and we'll discuss your specific needs.
           </p>
           <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
