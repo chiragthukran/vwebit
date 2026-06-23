@@ -109,7 +109,7 @@ export default function ContactPage() {
             {/* Right — Form */}
             <div className="bg-white border border-[var(--color-outline-variant)] rounded-2xl p-8 shadow-sm">
               <h2 className="font-[var(--font-geist)] text-lg font-bold text-[var(--color-on-surface)] mb-6">Send Us a Message</h2>
-              <ContactForm />
+              <ContactForm autoFocus />
             </div>
           </div>
         </div>

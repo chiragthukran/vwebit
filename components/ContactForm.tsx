@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -8,7 +8,9 @@ import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
 
 const schema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
-  phone: z.string().min(10, "Enter a valid phone number"),
+  phone: z.string()
+    .min(10, "Phone number must be at least 10 characters")
+    .regex(/^\+?[0-9\s\-()]{10,}$/, "Please enter a valid phone number"),
   plan: z.string().optional(),
   businessType: z.string().min(1, "Please select a business type"),
   otherBusiness: z.string().optional(),
@@ -27,7 +29,7 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>;
 
-export function ContactForm() {
+export function ContactForm({ autoFocus = false }: { autoFocus?: boolean } = {}) {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -36,6 +38,7 @@ export function ContactForm() {
     register,
     handleSubmit,
     watch,
+    setValue,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
@@ -43,6 +46,35 @@ export function ContactForm() {
   });
 
   const businessType = watch("businessType");
+
+  useEffect(() => {
+    if (autoFocus) {
+      // Small timeout to ensure DOM is fully painted
+      const timer = setTimeout(() => {
+        const formEl = document.getElementById("contact-form-container");
+        if (formEl) {
+          // Scroll with a 150px offset to prevent the form from going too far up (e.g. under a navbar)
+          const y = formEl.getBoundingClientRect().top + window.scrollY - 150;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+        // Focus the name input after a short delay for smooth scrolling
+        setTimeout(() => {
+          document.getElementById("contact-name")?.focus({ preventScroll: true });
+        }, 300);
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [autoFocus]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const planParam = params.get("plan");
+      if (planParam) {
+        setValue("plan", planParam);
+      }
+    }
+  }, [setValue]);
 
   const onSubmit = async (data: FormData) => {
     setLoading(true);
@@ -79,7 +111,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+    <form id="contact-form-container" onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
       <div aria-hidden="true" className="hidden">
         <input type="text" tabIndex={-1} autoComplete="off" {...register("botField")} />
       </div>
@@ -89,7 +121,7 @@ export function ContactForm() {
         <label htmlFor="contact-name" className="block text-sm font-semibold text-[var(--color-on-surface)] mb-1.5">
           Your Name <span className="text-[var(--color-error)]">*</span>
         </label>
-        <input id="contact-name" type="text" autoComplete="name" placeholder="Amit Sharma" {...register("name")} className="w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm placeholder:text-[var(--color-outline)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition" />
+        <input id="contact-name" type="text" autoComplete="name" placeholder="Save Earth" {...register("name")} className="w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm placeholder:text-[var(--color-outline)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition" />
         {errors.name && <p className="mt-1 text-xs text-[var(--color-error)]">{errors.name.message}</p>}
       </div>
 
@@ -108,13 +140,13 @@ export function ContactForm() {
           Interested In
         </label>
         <div className="relative">
-          <select id="contact-plan" {...register("plan")} className="appearance-none w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition pr-10">
-            <option value="">Select a plan or service</option>
-            <option value="Starter Plan (₹7,999)">Starter Plan (₹7,999)</option>
-            <option value="Custom Quote">Custom Quote</option>
-            <option value="Growth+ Plan (₹24,999)">Growth+ Plan (₹24,999)</option>
-            <option value="Free Consultation">Free Consultation</option>
-            <option value="Not Sure Yet">Not Sure Yet</option>
+          <select id="contact-plan" {...register("plan")} className="appearance-none w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition pr-10 cursor-pointer">
+            <option value="" className="bg-white text-[var(--color-on-surface)] py-2">Select a plan or service</option>
+            <option value="Starter Plan (₹7,999)" className="bg-white text-[var(--color-on-surface)] py-2">Starter Plan (₹7,999)</option>
+            <option value="Custom Quote" className="bg-white text-[var(--color-on-surface)] py-2">Custom Quote</option>
+            <option value="Growth+ Plan (₹24,999)" className="bg-white text-[var(--color-on-surface)] py-2">Growth+ Plan (₹24,999)</option>
+            <option value="Free Consultation" className="bg-white text-[var(--color-on-surface)] py-2">Free Consultation</option>
+            <option value="Not Sure Yet" className="bg-white text-[var(--color-on-surface)] py-2">Not Sure Yet</option>
           </select>
           <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-on-surface-variant)] pointer-events-none" aria-hidden="true" />
         </div>
@@ -126,14 +158,14 @@ export function ContactForm() {
           Business Type <span className="text-[var(--color-error)]">*</span>
         </label>
         <div className="relative">
-          <select id="contact-business-type" {...register("businessType")} className="appearance-none w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition pr-10">
-            <option value="">Select your business type</option>
-            <option value="Packers & Movers">Packers & Movers</option>
-            <option value="Transport / Logistics">Transport / Logistics</option>
-            <option value="Clinic / Healthcare">Clinic / Healthcare</option>
-            <option value="Contractor / Builder">Contractor / Builder</option>
-            <option value="Retail / Shop">Retail / Shop</option>
-            <option value="other">Other</option>
+          <select id="contact-business-type" {...register("businessType")} className="appearance-none w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition pr-10 cursor-pointer">
+            <option value="" className="bg-white text-[var(--color-on-surface)] py-2">Select your business type</option>
+            <option value="Packers & Movers" className="bg-white text-[var(--color-on-surface)] py-2">Packers & Movers</option>
+            <option value="Transport / Logistics" className="bg-white text-[var(--color-on-surface)] py-2">Transport / Logistics</option>
+            <option value="Clinic / Healthcare" className="bg-white text-[var(--color-on-surface)] py-2">Clinic / Healthcare</option>
+            <option value="Contractor / Builder" className="bg-white text-[var(--color-on-surface)] py-2">Contractor / Builder</option>
+            <option value="Retail / Shop" className="bg-white text-[var(--color-on-surface)] py-2">Retail / Shop</option>
+            <option value="other" className="bg-white text-[var(--color-on-surface)] py-2">Other</option>
           </select>
           <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-on-surface-variant)] pointer-events-none" aria-hidden="true" />
         </div>
@@ -157,12 +189,12 @@ export function ContactForm() {
           Project Timeline
         </label>
         <div className="relative">
-          <select id="contact-timeline" {...register("timeline")} className="appearance-none w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition pr-10">
-            <option value="">Select an expected timeline</option>
-            <option value="ASAP">ASAP</option>
-            <option value="1-2 Weeks">1-2 Weeks</option>
-            <option value="1 Month">1 Month</option>
-            <option value="More than a month">More than a month</option>
+          <select id="contact-timeline" {...register("timeline")} className="appearance-none w-full px-4 py-3 rounded-lg border border-[var(--color-outline-variant)] bg-white text-[var(--color-on-surface)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent transition pr-10 cursor-pointer">
+            <option value="" className="bg-white text-[var(--color-on-surface)] py-2">Select an expected timeline</option>
+            <option value="ASAP" className="bg-white text-[var(--color-on-surface)] py-2">ASAP</option>
+            <option value="1-2 Weeks" className="bg-white text-[var(--color-on-surface)] py-2">1-2 Weeks</option>
+            <option value="1 Month" className="bg-white text-[var(--color-on-surface)] py-2">1 Month</option>
+            <option value="More than a month" className="bg-white text-[var(--color-on-surface)] py-2">More than a month</option>
           </select>
           <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-on-surface-variant)] pointer-events-none" aria-hidden="true" />
         </div>

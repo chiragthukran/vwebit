@@ -203,9 +203,9 @@ export default function HomePage() {
 
             {/* Right Column: Contact Form (Laptop Only) */}
             <div className="hidden lg:block relative animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <div className="bg-white/95 backdrop-blur-md p-8 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-[var(--color-outline-variant)]">
-                <h2 className="text-2xl font-bold font-[var(--font-geist)] text-[var(--color-on-surface)] mb-2">Book a Free Consultation</h2>
-                <p className="text-sm text-[var(--color-on-surface-variant)] mb-6">
+              <div className="bg-white/95 backdrop-blur-md p-6 max-w-[420px] ml-auto rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-[var(--color-outline-variant)]">
+                <h2 className="text-xl font-bold font-[var(--font-geist)] text-[var(--color-on-surface)] mb-2">Book a Free Consultation</h2>
+                <p className="text-xs text-[var(--color-on-surface-variant)] mb-4">
                   Tell us about your business goals and we'll show you how to get more customers online.
                 </p>
                 <ContactForm />

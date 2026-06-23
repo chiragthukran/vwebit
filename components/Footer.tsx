@@ -17,7 +17,6 @@ const quickLinks = [
   { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
-  { label: "Free Consultation", href: "/contact" },
 ];
 
 export function Footer() {

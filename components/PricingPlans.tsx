@@ -20,7 +20,7 @@ const plans = [
       "1 Month Support",
     ],
     buttonText: "Get Started",
-    buttonLink: "/contact",
+    buttonLink: "/contact?plan=Starter+Plan+(₹7,999)",
     popular: false,
   },
   {
@@ -41,7 +41,7 @@ const plans = [
       "3 Months Support",
     ],
     buttonText: "Request Quote",
-    buttonLink: "/contact",
+    buttonLink: "/contact?plan=Custom+Quote",
     popular: true,
   },
   {
@@ -62,7 +62,7 @@ const plans = [
       "Growth Strategy Consultation",
     ],
     buttonText: "Book Free Consultation",
-    buttonLink: "/contact",
+    buttonLink: "/contact?plan=Growth%2B+Plan+(₹24,999)",
     popular: false,
   },
 ];

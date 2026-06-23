@@ -126,8 +126,19 @@ export default function AboutPage() {
       <section className="py-20 px-6 md:px-12 bg-white">
         <div className="max-w-[1280px] mx-auto">
           <SectionHeader eyebrow="Meet the Developer" title="Chirag Thukran" subtitle="The founder and lead developer behind Vwebit. Check out my personal portfolio below to see my open-source projects, technical writing, and background." centered className="mb-12" />
-          <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-[var(--color-outline-variant)] bg-[var(--color-surface-container-lowest)] h-[800px] relative">
-            <iframe src="https://chiragthukran.dev" className="absolute inset-0 w-full h-full border-0" title="Chirag Thukran Portfolio" />
+          <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-[var(--color-outline-variant)] bg-[var(--color-surface-container-lowest)] aspect-[16/9] relative group">
+            <a href="https://chiragthukran.dev" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+              <img 
+                src="/images/website-ss.png" 
+                alt="Chirag Thukran Portfolio Screenshot" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-[var(--color-primary)]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
+                <span className="bg-white text-[var(--color-primary)] px-8 py-4 rounded-full font-bold shadow-xl flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                  Visit Portfolio <ArrowRight className="w-5 h-5" />
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
