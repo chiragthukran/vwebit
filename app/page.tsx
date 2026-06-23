@@ -3,12 +3,13 @@ import Link from "next/link";
 import {
   Globe, Search, Smartphone, HeadphonesIcon, ArrowRight,
   CheckCircle2, Zap, TrendingUp, IndianRupee, Building2,
-  Truck, Stethoscope, HardHat
+  Truck, Stethoscope, HardHat, MessageSquare
 } from "lucide-react";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { PricingPlans } from "@/components/PricingPlans";
 import { HeroVideo } from "@/components/HeroVideo";
+import { ContactForm } from "@/components/ContactForm";
 import { faqSchema, webPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -199,9 +200,32 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
+
+            {/* Right Column: Contact Form (Laptop Only) */}
+            <div className="hidden lg:block relative animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+              <div className="bg-white/95 backdrop-blur-md p-8 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-[var(--color-outline-variant)]">
+                <h2 className="text-2xl font-bold font-[var(--font-geist)] text-[var(--color-on-surface)] mb-2">Book a Free Consultation</h2>
+                <p className="text-sm text-[var(--color-on-surface-variant)] mb-6">
+                  Tell us about your business goals and we'll show you how to get more customers online.
+                </p>
+                <ContactForm />
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Mobile Floating Button */}
+      <div className="fixed bottom-6 right-6 z-40 lg:hidden">
+        <Link 
+          href="/contact" 
+          className="flex items-center gap-2 bg-[var(--color-primary)] text-white px-5 py-3.5 rounded-full shadow-2xl hover:bg-[var(--color-surface-tint)] hover:scale-105 active:scale-95 transition-all"
+          aria-label="Book a free consultation"
+        >
+          <MessageSquare className="w-5 h-5" aria-hidden="true" />
+          <span className="font-semibold text-sm whitespace-nowrap">Book Consultation</span>
+        </Link>
+      </div>
 
       {/* ── 2. TRUST INDICATORS ──────────────────────────────────── */}
       <section className="bg-[var(--color-surface-container-low)] border-b border-[var(--color-outline-variant)]" aria-label="Key features">
@@ -438,7 +462,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/free-consultation"
+              href="/contact"
               id="cta-banner-consultation"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors shadow-sm"
             >

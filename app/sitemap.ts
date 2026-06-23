@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/local-seo", priority: 0.9, changeFrequency: "monthly" as const },
     { path: "/google-business-profile", priority: 0.9, changeFrequency: "monthly" as const },
     { path: "/business-automation", priority: 0.9, changeFrequency: "monthly" as const },
-    { path: "/free-consultation", priority: 0.95, changeFrequency: "monthly" as const },
+    { path: "/contact", priority: 0.95, changeFrequency: "monthly" as const },
     { path: "/industries", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/packers-movers-website-development", priority: 0.85, changeFrequency: "monthly" as const },
     { path: "/transport-company-website", priority: 0.85, changeFrequency: "monthly" as const },

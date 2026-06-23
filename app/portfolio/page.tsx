@@ -149,7 +149,7 @@ export default function PortfolioPage() {
           <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-[512px] mx-auto">
             Get a free consultation and we'll show you exactly how we can build something similar — tailored to your industry and goals.
           </p>
-          <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
             Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>
         </div>

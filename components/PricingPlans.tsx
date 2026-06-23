@@ -143,7 +143,7 @@ export function PricingPlans() {
             Get a free consultation and free consultation. We'll recommend the best solution based on your goals and budget.
           </p>
           <Button asChild variant="primary" size="lg">
-            <Link href="/free-consultation" className="inline-flex items-center gap-2">
+            <Link href="/contact" className="inline-flex items-center gap-2">
               Get free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </Button>

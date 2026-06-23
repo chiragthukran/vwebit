@@ -59,7 +59,7 @@ export default function ContractorPage() {
               A portfolio-driven website that showcases your projects, builds trust with potential clients, and generates more local enquiries and site visit requests.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/free-consultation" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
+              <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
                 Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
               <a href="https://wa.me/918571017947?text=Hi%2C%20I%20need%20a%20website%20for%20my%20contractor%20business." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 border border-[var(--color-primary)] text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-surface-container-low)] transition-colors">
@@ -103,7 +103,7 @@ export default function ContractorPage() {
         <div className="max-w-[1280px] mx-auto text-center">
           <h2 className="font-[var(--font-geist)] text-3xl font-bold text-white mb-4">Ready to Showcase Your Work?</h2>
           <p className="text-[var(--color-primary-fixed-dim)] mb-8 w-full max-w-[512px] mx-auto">Get a free consultation and see how a professional website can grow your contracting business.</p>
-          <Link href="/free-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
+          <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-primary-fixed)] transition-colors">
             Get Free Consultation <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>
         </div>
