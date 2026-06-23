@@ -64,7 +64,7 @@ export function Navbar() {
           className="flex items-center gap-2 font-[var(--font-geist)] font-bold text-[var(--color-primary)] text-xl hover:opacity-90 transition-opacity"
           aria-label="Vwebit home"
         >
-          <Globe className="w-6 h-6" aria-hidden="true" />
+          <img src="/logo.png" alt="Vwebit Logo" className="w-8 h-8 object-contain" />
           Vwebit
         </Link>
 

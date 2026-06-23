@@ -96,7 +96,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <p className="text-sm text-[var(--color-on-surface-variant)]">
-                  "We believe every local business deserves a professional online presence. Starting from ₹15,000, we make that possible."
+                  "We believe every local business deserves a professional online presence. Starting from ₹7,999, we make that possible."
                 </p>
               </div>
             </div>

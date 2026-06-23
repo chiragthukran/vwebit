@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.vwebit.xyz/packers-movers-website-development" },
   openGraph: {
     title: "Website for Packers and Movers in India | Vwebit",
-    description: "Get more shifting enquiries with a professional packers & movers website. Starting from ₹15,000.",
+    description: "Get more shifting enquiries with a professional packers & movers website. Starting from ₹7,999.",
     url: "https://www.vwebit.xyz/packers-movers-website-development",
   },
 };
@@ -32,7 +32,7 @@ const faqs = [
   { question: "How will a website help my packers and movers business?", answer: "A website lets customers find you on Google, request a quote online, and trust you before calling. Most people search 'packers movers [city]' before picking a company." },
   { question: "Will my website rank on Google for local searches?", answer: "Yes. We optimise every page for your target cities and services. We also set up your Google Business Profile to appear in local map searches." },
   { question: "Can I add multiple cities to my website?", answer: "Absolutely. We can create city-specific pages for every city you serve, each optimised for local search in that city." },
-  { question: "What is the starting price for a packers and movers website?", answer: "Our websites start from ₹15,000. The exact price depends on the number of pages, cities, and features you need. Contact us for a custom quote." },
+  { question: "What is the starting price for a packers and movers website?", answer: "Our websites start from ₹7,999. The exact price depends on the number of pages, cities, and features you need. Contact us for a custom quote." },
 ];
 
 export default function PackersMoversPage() {
@@ -40,7 +40,7 @@ export default function PackersMoversPage() {
     "Website for Packers and Movers",
     "Professional website development for packers and movers businesses in India to generate more shifting enquiries.",
     "/packers-movers-website-development",
-    "Starting from ₹15,000"
+    "Starting from ₹7,999"
   );
 
   return (

@@ -14,12 +14,12 @@ import { faqSchema, webPageSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Get More Leads with a Professional Website | Vwebit",
   description:
-    "Vwebit helps local businesses in India generate more inquiries through modern websites, local SEO, Google Business Profile optimization, and business automation. Starting from ₹15,000.",
+    "Vwebit helps local businesses in India generate more inquiries through modern websites, local SEO, Google Business Profile optimization, and business automation. Starting from ₹7,999.",
   alternates: { canonical: "https://www.vwebit.xyz" },
   openGraph: {
     title: "Get More Leads with a Professional Website | Vwebit",
     description:
-      "Professional websites, local SEO, and Google Business Profile optimization for Indian SMEs. Starting from ₹15,000.",
+      "Professional websites, local SEO, and Google Business Profile optimization for Indian SMEs. Starting from ₹7,999.",
     url: "https://www.vwebit.xyz",
   },
 };
@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "How much does a website cost for a small business in India?",
     answer:
-      "Our websites start from ₹15,000 for a professional 5-page site. Pricing depends on features, pages, and complexity. We offer transparent packages with no hidden charges.",
+      "Our websites start from ₹7,999 for a professional 5-page site. Pricing depends on features, pages, and complexity. We offer transparent packages with no hidden charges.",
   },
   {
     question: "How long does it take to build a website?",
@@ -103,7 +103,7 @@ const whyVwebit = [
   {
     title: "Affordable & Transparent Pricing",
     description:
-      "No hidden fees, no surprises. Flat-rate packages starting from ₹15,000 with everything you need included.",
+      "No hidden fees, no surprises. Flat-rate packages starting from ₹7,999 with everything you need included.",
   },
   {
     title: "SEO From Day One",
@@ -135,7 +135,7 @@ const whyFeatures = [
   "Fast websites that load in under 2 seconds",
   "SEO-first development for better rankings",
   "Mobile optimised for all screen sizes",
-  "Affordable pricing starting from ₹15,000",
+  "Affordable pricing starting from ₹7,999",
   "Ongoing support after your site goes live",
   "Clear communication throughout the project",
 ];
@@ -174,7 +174,7 @@ export default function HomePage() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--color-secondary-container)] text-[var(--color-primary)] text-xs font-semibold rounded-full mb-6 animate-fade-in">
                 <IndianRupee className="w-3 h-3" aria-hidden="true" />
-                Starting from ₹15,000
+                Starting from ₹7,999
               </div>
               <h1 className="font-[var(--font-geist)] text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-on-surface)] leading-tight tracking-tight mb-6 animate-fade-in-up">
                 Get More Leads with a{" "}
@@ -394,7 +394,7 @@ export default function HomePage() {
             { title: "Fast Websites", desc: "Sites that load in under 2.5 seconds so you never lose a visitor to slow loading.", icon: Zap },
             { title: "SEO-First Development", desc: "Every page is built with search visibility in mind — right from the code structure to the content.", icon: TrendingUp },
             { title: "Mobile Optimised", desc: "80% of your visitors are on mobile. Every site we build is designed mobile-first.", icon: Smartphone },
-            { title: "Affordable Pricing", desc: "Professional quality at Indian SME budgets. Starting from ₹15,000 with no hidden fees.", icon: IndianRupee },
+            { title: "Affordable Pricing", desc: "Professional quality at Indian SME budgets. Starting from ₹7,999 with no hidden fees.", icon: IndianRupee },
             { title: "Ongoing Support", desc: "30 days of post-launch support included. We're reachable on WhatsApp anytime.", icon: HeadphonesIcon },
             { title: "Built for Indian Markets", desc: "We understand local business needs, regional keywords, and India-specific customer behaviour.", icon: Globe },
           ].map(({ title, desc, icon: Icon }) => (

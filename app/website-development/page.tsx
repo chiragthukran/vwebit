@@ -10,12 +10,12 @@ import { serviceSchema, faqSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Website Development for Small Business India | Vwebit",
   description:
-    "Professional website development for small businesses in India. Fast, mobile-first, SEO-optimised websites starting from ₹15,000. Serving businesses across India.",
+    "Professional website development for small businesses in India. Fast, mobile-first, SEO-optimised websites starting from ₹7,999. Serving businesses across India.",
   keywords: ["website development for small business India", "small business website design India", "affordable website development India"],
   alternates: { canonical: "https://www.vwebit.xyz/website-development" },
   openGraph: {
     title: "Website Development for Small Business India | Vwebit",
-    description: "Fast, mobile-first, SEO-optimised websites for Indian SMEs. Starting from ₹15,000.",
+    description: "Fast, mobile-first, SEO-optimised websites for Indian SMEs. Starting from ₹7,999.",
     url: "https://www.vwebit.xyz/website-development",
   },
 };
@@ -48,7 +48,7 @@ export default function WebsiteDevelopmentPage() {
     "Website Development for Small Business",
     "Professional website development for small businesses in India. Fast, mobile-first, SEO-optimised.",
     "/website-development",
-    "Starting from ₹15,000"
+    "Starting from ₹7,999"
   );
 
   return (
@@ -74,7 +74,7 @@ export default function WebsiteDevelopmentPage() {
             Website Development for<br />Small Business in India
           </h1>
           <p className="text-lg text-[var(--color-on-surface-variant)] mb-8 leading-relaxed max-w-2xl">
-            We build fast, mobile-first, SEO-optimised websites that help small businesses across India get more calls, enquiries, and customers. Starting from ₹15,000.
+            We build fast, mobile-first, SEO-optimised websites that help small businesses across India get more calls, enquiries, and customers. Starting from ₹7,999.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/free-consultation" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">

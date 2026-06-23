@@ -32,13 +32,13 @@ const faqs = [
   { question: "How will a website help my contracting business?", answer: "A professional website lets potential clients find you on Google, see your past work, and contact you directly. It builds credibility and generates enquiries even when you're on-site." },
   { question: "Can I showcase my past projects?", answer: "Yes. We include a portfolio section with photos of your completed projects, which is one of the most effective ways to convert website visitors into paying clients." },
   { question: "Do you help with local SEO for contractors?", answer: "Yes. We optimise your website to rank for contractor-related searches in your city or area. We also set up your Google Business Profile." },
-  { question: "What is the cost?", answer: "Contractor websites start from ₹15,000. Contact us for a quote based on your specific requirements." },
+  { question: "What is the cost?", answer: "Contractor websites start from ₹7,999. Contact us for a quote based on your specific requirements." },
 ];
 
 export default function ContractorPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema("Website for Contractors", "Professional website development for contractors and builders in India.", "/contractor-website-development", "Starting from ₹15,000")) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema("Website for Contractors", "Professional website development for contractors and builders in India.", "/contractor-website-development", "Starting from ₹7,999")) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
 
       <div className="bg-[var(--color-surface-container-lowest)]">

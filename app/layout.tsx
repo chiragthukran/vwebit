@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | Vwebit",
   },
   description:
-    "Vwebit helps Indian SMEs get more leads with professional websites, local SEO, Google Business Profile optimization, and business automation. Starting from ₹15,000.",
+    "Vwebit helps Indian SMEs get more leads with professional websites, local SEO, Google Business Profile optimization, and business automation. Starting from ₹7,999.",
   keywords: [
     "website development for small business India",
     "local SEO services India",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Vwebit",
     title: "Vwebit — Websites & SEO for Indian Small Businesses",
     description:
-      "Professional websites, local SEO, and Google Business Profile optimization for Indian SMEs. Starting from ₹15,000.",
+      "Professional websites, local SEO, and Google Business Profile optimization for Indian SMEs. Starting from ₹7,999.",
   },
   twitter: {
     card: "summary_large_image",

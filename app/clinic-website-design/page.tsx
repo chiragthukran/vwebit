@@ -38,7 +38,7 @@ const faqs = [
 export default function ClinicWebsitePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema("Clinic Website Design India", "Patient-friendly clinic website design with appointment booking and local health SEO for Indian healthcare providers.", "/clinic-website-design", "Starting from ₹15,000")) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema("Clinic Website Design India", "Patient-friendly clinic website design with appointment booking and local health SEO for Indian healthcare providers.", "/clinic-website-design", "Starting from ₹7,999")) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
 
       <div className="bg-[var(--color-surface-container-lowest)]">

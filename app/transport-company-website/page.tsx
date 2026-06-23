@@ -9,7 +9,7 @@ import { serviceSchema, faqSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Website for Transport Company in India | Vwebit",
   description:
-    "Professional website development for transport and logistics companies in India. Get more freight enquiries with a fast, professional logistics website. Starting from ₹15,000.",
+    "Professional website development for transport and logistics companies in India. Get more freight enquiries with a fast, professional logistics website. Starting from ₹7,999.",
   keywords: ["website for transport company", "transport company website design India", "logistics website development India"],
   alternates: { canonical: "https://www.vwebit.xyz/transport-company-website" },
   openGraph: {
@@ -32,13 +32,13 @@ const faqs = [
   { question: "Why does my transport company need a website?", answer: "Most businesses search for transport partners online. Without a website, you're invisible to potential clients searching for freight solutions in your area or routes." },
   { question: "Can you create pages for multiple routes?", answer: "Yes. We create dedicated route pages (e.g., Delhi to Mumbai freight, Chandigarh to Pune transport) that rank for route-specific searches." },
   { question: "Do you provide SEO for transport companies?", answer: "Yes. We optimise your website for freight-related keywords, route-specific searches, and set up your Google Business Profile for local transport searches." },
-  { question: "What is the cost of a transport company website?", answer: "Websites start from ₹15,000. The exact cost depends on the number of routes, pages, and features needed. Contact us for a tailored quote." },
+  { question: "What is the cost of a transport company website?", answer: "Websites start from ₹7,999. The exact cost depends on the number of routes, pages, and features needed. Contact us for a tailored quote." },
 ];
 
 export default function TransportCompanyPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema("Website for Transport Company", "Professional website development for transport and logistics companies in India.", "/transport-company-website", "Starting from ₹15,000")) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema("Website for Transport Company", "Professional website development for transport and logistics companies in India.", "/transport-company-website", "Starting from ₹7,999")) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
 
       <div className="bg-[var(--color-surface-container-lowest)]">

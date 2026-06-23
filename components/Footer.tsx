@@ -33,7 +33,7 @@ export function Footer() {
               className="inline-flex items-center gap-2 font-[var(--font-geist)] font-bold text-[var(--color-primary)] text-lg hover:opacity-90 transition-opacity"
               aria-label="Vwebit home"
             >
-              <Globe className="w-5 h-5" aria-hidden="true" />
+              <img src="/logo.png" alt="Vwebit Logo" className="w-6 h-6 object-contain" />
               Vwebit
             </Link>
             <div className="space-y-2 text-sm text-[var(--color-on-surface-variant)]">
