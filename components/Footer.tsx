@@ -41,11 +41,11 @@ export function Footer() {
                 <span>Based in Jalandhar, Punjab<br />Serving businesses across India</span>
               </div>
               <a
-                href="tel:+918571017947"
+                href="tel:+917734857983"
                 className="flex items-center gap-2 hover:text-[var(--color-primary)] transition-colors"
               >
                 <Phone className="w-4 h-4 shrink-0 text-[var(--color-primary)]" aria-hidden="true" />
-                +91 85710 17947
+                +91 77348 57983
               </a>
               <a
                 href="mailto:vwebit12@gmail.com"

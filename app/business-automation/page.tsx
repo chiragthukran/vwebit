@@ -68,7 +68,7 @@ export default function BusinessAutomationPage() {
               <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-surface-tint)] transition-colors">
                 Get Started <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
-              <a href="https://wa.me/918571017947?text=Hi%2C%20I%27m%20interested%20in%20business%20automation." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 border border-[var(--color-primary)] text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-surface-container-low)] transition-colors">
+              <a href="https://wa.me/917734857983?text=Hi%2C%20I%27m%20interested%20in%20business%20automation." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 border border-[var(--color-primary)] text-[var(--color-primary)] font-semibold rounded-lg hover:bg-[var(--color-surface-container-low)] transition-colors">
                 WhatsApp Us
               </a>
             </div>

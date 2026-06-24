@@ -187,7 +187,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
                 <a
-                  href="https://wa.me/918571017947?text=Hi%2C%20I%27m%20interested%20in%20Vwebit%27s%20services."
+                  href="https://wa.me/917734857983?text=Hi%2C%20I%27m%20interested%20in%20Vwebit%27s%20services."
                   target="_blank"
                   rel="noopener noreferrer"
                   id="hero-whatsapp-cta"
@@ -470,7 +470,7 @@ export default function HomePage() {
               <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
             <a
-              href="https://wa.me/918571017947?text=Hi%2C%20I%27m%20interested%20in%20Vwebit%27s%20services."
+              href="https://wa.me/917734857983?text=Hi%2C%20I%27m%20interested%20in%20Vwebit%27s%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"

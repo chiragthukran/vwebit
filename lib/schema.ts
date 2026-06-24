@@ -7,7 +7,7 @@ export const organizationSchema = {
   name: "Vwebit",
   url: BASE_URL,
   email: "vwebit12@gmail.com",
-  telephone: "+91 85710 17947",
+  telephone: "+91 77348 57983",
   foundingLocation: "Jalandhar, Punjab, India",
   description:
     "Website development, local SEO, Google Business Profile optimization and business automation services for Indian SMEs.",
@@ -23,7 +23,7 @@ export const organizationSchema = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+91 85710 17947",
+    telephone: "+91 77348 57983",
     contactType: "customer service",
     availableLanguage: ["English", "Hindi", "Punjabi"],
   },

@@ -6,7 +6,7 @@ import { webPageSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Contact Vwebit — Get in Touch | Vwebit",
   description:
-    "Contact Vwebit for website development, local SEO, and Google Business Profile services. Based in Jalandhar, Punjab. Call or WhatsApp +91 85710 17947.",
+    "Contact Vwebit for website development, local SEO, and Google Business Profile services. Based in Jalandhar, Punjab. Call or WhatsApp +91 77348 57983.",
   alternates: { canonical: "https://www.vwebit.xyz/contact" },
   openGraph: {
     title: "Contact Vwebit | Website & SEO for Indian SMEs",
@@ -58,8 +58,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-[var(--font-geist)] font-semibold text-[var(--color-on-surface)] text-sm mb-0.5">Phone & WhatsApp</p>
-                    <a href="tel:+918571017947" className="text-sm text-[var(--color-on-surface-variant)] hover:text-[var(--color-primary)] transition-colors">
-                      +91 85710 17947
+                    <a href="tel:+917734857983" className="text-sm text-[var(--color-on-surface-variant)] hover:text-[var(--color-primary)] transition-colors">
+                      +91 77348 57983
                     </a>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
 
               <div className="mt-10">
                 <a
-                  href="https://wa.me/918571017947?text=Hi%2C%20I%27m%20interested%20in%20Vwebit%27s%20services."
+                  href="https://wa.me/917734857983?text=Hi%2C%20I%27m%20interested%20in%20Vwebit%27s%20services."
                   target="_blank"
                   rel="noopener noreferrer"
                   id="contact-whatsapp-btn"
